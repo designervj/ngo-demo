@@ -55,7 +55,7 @@ const Footer = () => {
             Quick Links
           </h4>
           <ul className="space-y-3 text-white">
-            {["About Us", "Contact Us", "Products", "Login", "Sign Up"].map(
+            {["Home", "About Gravis", "SABL Project", "Resources", "Photo Gallery", "Get Involved"].map(
               (item, i) => (
                 <li key={i}>
                   <a
@@ -77,9 +77,9 @@ const Footer = () => {
           </h4>
           <ul className="space-y-3  text-white">
             {[
-              "My Account",
-              "Orders",
-              "Tracking List",
+              // "My Account",
+           
+              // "Tracking List",
               "Terms & Conditions",
               "Privacy Policy",
             ].map((item, i) => (
