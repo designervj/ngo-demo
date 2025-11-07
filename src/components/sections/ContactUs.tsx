@@ -32,7 +32,7 @@ export default function ContactSection() {
               <Mail className="w-6 h-6 text-[#69a242]" />
               <div>
                 <h4 className="font-semibold text-gray-900">Email</h4>
-                <p className="text-gray-600">info@gravisindia.org</p>
+                <p className="text-gray-600">info@sabl.org</p>
               </div>
             </div>
 
@@ -40,7 +40,7 @@ export default function ContactSection() {
               <Globe className="w-6 h-6 text-[#69a242]" />
               <div>
                 <h4 className="font-semibold text-gray-900">Website</h4>
-                <p className="text-gray-600">www.gravisindia.org</p>
+                <p className="text-gray-600">www.sabl.org</p>
               </div>
             </div>
           </div>
