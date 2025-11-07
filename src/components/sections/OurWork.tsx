@@ -41,9 +41,9 @@ export default function OurWork() {
     
       <div className="container-xl mx-auto px-4">
         {/* Top Text */}
-        <div className="grid grid-cols-[30%_70%] gap-8 mb-14">
-          <h2 className="text-4xl font-bold text-gray-900 leading-snug">
-            A systemic <br /> approach
+        <div className="grid md:grid-cols-[30%_70%] gap-8 mb-14">
+          <h2 className="text-3xl font-bold text-gray-900 leading-snug">
+            A systemic approach
           </h2>
           <p className="text-gray-700 leading-relaxed">
             To effect systemic change, we engage a range of actors from global

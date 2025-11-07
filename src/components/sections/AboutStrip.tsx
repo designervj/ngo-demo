@@ -53,7 +53,7 @@ export default function AboutApproach() {
     <section className="py-16 px-4 md:px-10 bg-[#fff]">
       <div className="container-xl mx-auto">
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#333] mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#333] mb-5">
           Strengthening Agricultural Livelihoods
         </h2>
         <p className="text-gray-600 text-lg">

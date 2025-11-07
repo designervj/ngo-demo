@@ -36,7 +36,7 @@ const Testimonials = () => {
         <h2 className="text-[#8bb66c] text-sm uppercase tracking-widest font-semibold">
           Testimonials
         </h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-[#2B2B2B] mt-3 mb-12">
+        <h3 className="text-3xl md:text-5xl font-bold text-[#2B2B2B] mt-3 mb-12">
           What Our Clients Say
         </h3>
 

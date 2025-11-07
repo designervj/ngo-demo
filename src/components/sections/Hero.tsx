@@ -30,7 +30,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative w-full h-[80vh] sm:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[65vh] sm:h-[90vh] overflow-hidden">
       {/* 🔹 Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700"
@@ -51,7 +51,8 @@ export default function HeroSlider() {
             animate="visible"
             exit="exit"
             transition={{ duration: 0.8 }}
-            className="text-white text-2xl sm:text-4xl lg:text-5xl font-semibold max-w-3xl leading-snug"
+            className="text-white text-2xl sm:text-4xl lg:text-5xl font-semibold max-w-3xl md:leading-[62px]"
+         
           >
             {captions[index]}
           </motion.h2>
@@ -64,13 +65,13 @@ export default function HeroSlider() {
           onClick={() =>
             setIndex((prev) => (prev - 1 + captions.length) % captions.length)
           }
-          className="p-3 sm:p-4 bg-white/20 hover:bg-white/30 text-white rounded-full transition"
+          className="p-1 md:p-3 sm:p-4 bg-white/20 hover:bg-white/30 text-white rounded-full transition"
         >
           <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
         <button
           onClick={() => setIndex((prev) => (prev + 1) % captions.length)}
-          className="p-3 sm:p-4 bg-white/20 hover:bg-white/30 text-white rounded-full transition"
+          className="p-1 md:p-3  sm:p-4 bg-white/20 hover:bg-white/30 text-white rounded-full transition"
         >
           <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
