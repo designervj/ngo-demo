@@ -6,6 +6,8 @@ import Header from '@/components/sections/Header'
 
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/sections/Footer';
+import CaseStudiesPage from './components/sections/CaseStudiesPage';
+import MediaCoveragePage from './components/sections/MediaCoveragePage';
 
 
 
@@ -41,6 +43,9 @@ export default function App(){
       />
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+         <Route path='/case-studies' element={<CaseStudiesPage/>}/>
+         <Route path='/media-coverage' element={<MediaCoveragePage/>}/>
+
         {/* <Route path='/product' element={<ProductPage/>}/> */}
        
       </Routes>

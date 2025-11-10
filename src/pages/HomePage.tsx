@@ -14,9 +14,9 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <AboutKarloBan />
+      {/* <AboutKarloBan /> */}
       <AboutStrip/>
-      <OurWork/>
+      {/* <OurWork/> */}
       <Testimonials />
 
    <NewsSection />

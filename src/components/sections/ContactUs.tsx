@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { MapPin, Mail, Globe } from "lucide-react";
+import { MapPin, Mail, Globe, Phone, PhoneCall } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -24,7 +24,9 @@ export default function ContactSection() {
               <MapPin className="w-6 h-6 text-[#69a242]" />
               <div>
                 <h4 className="font-semibold text-gray-900">Address</h4>
-                <p className="text-gray-600">123 Rural Road, Thar Desert Region, Rajasthan, India</p>
+                <p className="text-gray-600">
+               3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008, Rajasthan, India
+                </p>
               </div>
             </div>
 
@@ -32,15 +34,15 @@ export default function ContactSection() {
               <Mail className="w-6 h-6 text-[#69a242]" />
               <div>
                 <h4 className="font-semibold text-gray-900">Email</h4>
-                <p className="text-gray-600">info@sabl.org</p>
+                <p className="text-gray-600">email@gravis.org.in</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <Globe className="w-6 h-6 text-[#69a242]" />
+              <PhoneCall className="w-6 h-6 text-[#69a242]" />
               <div>
-                <h4 className="font-semibold text-gray-900">Website</h4>
-                <p className="text-gray-600">www.sabl.org</p>
+                <h4 className="font-semibold text-gray-900">Phone</h4>
+                <p className="text-gray-600">+91-291-2785-116</p>
               </div>
             </div>
           </div>

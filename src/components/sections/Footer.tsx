@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Globe, Mail, MapPin, Menu, PhoneCall, X } from "lucide-react";
 import footerLogo from "../../../public/assets/Image/logo-footer.svg";
 import appStore from "../../../public/assets/Image/appStore.png";
 import googlePlay from "../../../public/assets/Image/googlePlay.png";
@@ -104,18 +104,38 @@ const Footer = () => {
             Have any questions or need help? Reach out to us anytime.
           </p>
 
-          {/* <div className="mt-5 flex items-start gap-4">
-            <FaHeadset className="w-10 h-10 text-[#fff]" />
-            <div>
-              <p className="text-sm text-white">Customer Support</p>
+         
+
+
+ <div className="mt-2 flex items-center gap-2">
+            {/* <FaHeadset className="w-5 h-5 text-[#fff]" /> */}
+            
+              <PhoneCall className="w-5 h-5 text-[#fff]" />
+          
+              {/* <p className="text-sm text-white">Customer Support</p> */}
               <a
-                href="tel:+123456789"
-                className="text-lg font-semibold text-white hover:text-[#f1f1f1]"
+                href="tel:+912912785116"
+                className="text-lg font-medium text-white hover:text-[#f1f1f1]"
               >
-                +1 234 567 890
+                +91-291-2785-116
               </a>
-            </div>
-          </div> */}
+            
+          </div>
+
+         <div className="mt-2 flex items-center gap-2">
+            {/* <FaHeadset className="w-5 h-5 text-[#fff]" /> */}
+               <Mail className="w-5 h-5 text-[#fff]" />
+          
+              {/* <p className="text-sm text-white">Customer Support</p> */}
+              <a
+                href="mailto:email@gravis.org.in"
+                className="text-lg font-medium text-white hover:text-[#f1f1f1]"
+              >
+             email@gravis.org.in
+              </a>
+            
+          </div>
+
 
           {/* <a
             href="#"

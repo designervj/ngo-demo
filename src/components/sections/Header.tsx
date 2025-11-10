@@ -39,19 +39,27 @@ const Header = () => {
       ],
     },
     {
-      name: "SABL Project",
+  name: "SABL Project",
+  sub: [
+    "Project Overview",
+    "Objectives",
+    "Approach",
+    // 🌟 **FIX: "Activities" ab ek object hai jiska apna 'sub' array hai**
+    {
+      name: "Activities",
       sub: [
-        "Project Overview",
-        "Objectives",
-        "Approach",
-        "Activities",
-        "Capacity Building",
+        "Formation of CBOs & Capacity Building",
         "Rainwater Harvesting & Dryland Farming",
-        "Horticulture",
-        "Animal Husbandry",
-        "Enterprise Development",
+        "Horticulture & Animal Husbandry",
+        "Skill Development & Entrepreneurship and",
+        "Documentation & Advocacy",
       ],
     },
+
+     "Impact",
+    // Baaki ke items "Activities" ke andar chale gaye
+  ],
+},
     {
       name: "Resources",
       sub: [
@@ -72,11 +80,13 @@ const Header = () => {
         <div className="flex items-center justify-between gap-4">
           {/* LEFT: Logo + tagline (mobile) */}
           <div className="flex flex-col">
-            <span className="text-[#6BA642] font-extrabold text-3xl md:text-4xl tracking-tight leading-none">
-              SABL
-            </span>
+            <div className="text-[#6BA642] flex gap-4 font-extrabold text-3xl md:text-5xl tracking-tight leading-none">
+              <img src="/assets/Image/gravis-logo.png" alt="logo" className="h-16 w-auto" />
+               <img src="/assets/Image/eu-logo.jpg" alt="logo" className="h-16 w-auto" />
+            </div>
+
             {/* Tagline on mobile */}
-            <p className="md:hidden mt-1 text-[13px] leading-snug text-[#6c4c35] font-medium">
+            <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
               Strengthening Agriculture-based Livelihoods (SABL) in the Thar
               Desert
             </p>
@@ -84,7 +94,7 @@ const Header = () => {
 
           {/* CENTER: Tagline + Nav (desktop only) */}
           <div className="hidden md:flex flex-col items-center">
-            <p className="italic text-[#6c4c35] text-[15px] font-semibold mb-2 text-center">
+            <p className=" text-[#6c4c35] text-[18px] font-semibold mb-2 text-center">
               Strengthening Agriculture-based Livelihoods (SABL) in the Thar
               Desert
             </p>
@@ -112,15 +122,59 @@ const Header = () => {
                         : "opacity-0 scale-y-95 invisible"
                     }`}
                   >
-                    {menu.sub.map((item) => (
-                      <a
-                        key={item}
-                        href="#"
-                        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
-                      >
-                        {item}
-                      </a>
-                    ))}
+                   {menu.sub.map((item, index) => {
+  
+  // 1. Agar item simple string hai (jaise "Objectives")
+  if (typeof item === 'string') {
+    return (
+      <a
+        key={item}
+        href="#"
+        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
+      >
+        {item}
+      </a>
+    );
+  }
+
+  // 2. Agar item object hai (jaise "Activities")
+  // 'group' class hover ko control karne ke liye hai
+  return (
+    <div key={item.name} className="relative group">
+      <a
+        href="#"
+        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start flex justify-between items-center"
+      >
+        {item.name}
+        {/* Arrow icon ye dikhane ke liye ki isme sub-menu hai */}
+        <svg 
+          className="w-4 h-4 transition-transform duration-200 group-hover:rotate-90" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+      {/* 3. Ye hai Activities ka nested sub-menu */}
+      {/* Ye 'hidden' rehta hai aur 'group-hover:block' se dikhta hai */}
+      <div 
+        className="hidden group-hover:block absolute left-full top-0 w-max bg-white shadow-lg rounded-md border border-gray-100 z-10"
+      >
+        {item.sub.map((subItem) => (
+          <a
+            key={subItem}
+            href="#"
+            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-sm" // Font thoda chhota kar diya
+          >
+            {subItem}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+})}
                   </div>
                 </div>
               ))}
@@ -157,6 +211,20 @@ const Header = () => {
                 className="hover:bg-white p-2 rounded-full transition-all duration-300"
               >
                 <Linkedin className="w-5 h-5" />
+              </a>
+
+              <a
+                href="#"
+                className="hover:bg-white p-2 rounded-full transition-all duration-300"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+
+               <a
+                href="#"
+                className="hover:bg-white p-2 rounded-full transition-all duration-300"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
 
@@ -204,15 +272,59 @@ const Header = () => {
 
               {openDropdown === menu.name && (
                 <div className="pl-3 mt-2 space-y-1 text-[14px] text-gray-700">
-                  {menu.sub.map((sub) => (
-                    <a
-                      key={sub}
-                      href="#"
-                      className="block py-1 hover:text-[#6BA642]"
-                    >
-                      {sub}
-                    </a>
-                  ))}
+                  {menu.sub.map((item, index) => {
+  
+  // 1. Agar item simple string hai (jaise "Objectives")
+  if (typeof item === 'string') {
+    return (
+      <a
+        key={item}
+        href="#"
+        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
+      >
+        {item}
+      </a>
+    );
+  }
+
+  // 2. Agar item object hai (jaise "Activities")
+  // 'group' class hover ko control karne ke liye hai
+  return (
+    <div key={item.name} className="relative group">
+      <a
+        href="#"
+        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start flex justify-between items-center"
+      >
+        {item.name}
+        {/* Arrow icon ye dikhane ke liye ki isme sub-menu hai */}
+        <svg 
+          className="w-4 h-4 transition-transform duration-200 group-hover:rotate-90" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+      {/* 3. Ye hai Activities ka nested sub-menu */}
+      {/* Ye 'hidden' rehta hai aur 'group-hover:block' se dikhta hai */}
+      <div 
+        className="hidden group-hover:block absolute left-full top-0 w-max bg-white shadow-lg rounded-md border border-gray-100 z-10"
+      >
+        {item.sub.map((subItem) => (
+          <a
+            key={subItem}
+            href="#"
+            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-sm" // Font thoda chhota kar diya
+          >
+            {subItem}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+})}
                 </div>
               )}
             </div>
