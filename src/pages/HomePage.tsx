@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* <OurWork/> */}
       <Testimonials />
 
-   <NewsSection />
+   {/* <NewsSection /> */}
         <ContactUs/>
     </main>
   );

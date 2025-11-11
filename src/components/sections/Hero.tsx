@@ -4,29 +4,32 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// 🔹 3 Slides (replace image paths with client images)
 const slides = [
   {
-    image:
-      "/assets/Image/slider-img1.png",
+    image: "/assets/Image/SliderImage (1).png",
     caption: "Enhance participation of women and youth in agriculture",
   },
   {
-    image:
-      "/assets/Image/slider-img2.png",
+    image: "/assets/Image/SliderImage (2).png",
     caption: "Improve agricultural productivity and resource management",
   },
   {
-    image:
-      "/assets/Image/slider-img3.png",
-    caption: "Strengthen community resilience and adaptive capacity",
+    image: "/assets/Image/SliderImage (3).png",
+    caption: "Secure water resources with traditional harvesting techniques",
+  },
+  {
+    image: "/assets/Image/SliderImage (4).png",
+    caption: "Empower local communities through skill development",
+  },
+  {
+    image: "/assets/Image/SliderImage (5).png",
+    caption: "Promote sustainable livelihoods for long-term food security",
   },
 ];
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
 
-  // Auto slide every 3 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
@@ -42,7 +45,6 @@ export default function HeroSlider() {
 
   return (
     <section className="relative w-full h-[65vh] sm:h-[90vh] overflow-hidden">
-      {/* 🔹 Background Images (fade between 3 photos) */}
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[index].image}
@@ -50,17 +52,21 @@ export default function HeroSlider() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute inset-0 bg-cover bg-center"
+          // 🌟 **FIX: `bg-top` aur `bg-center` hata diya**
+          className="absolute inset-0 bg-cover" 
           style={{
             backgroundImage: `url("${slides[index].image}")`,
+            // 🌟 **FIX: Custom position add ki (25% from top)**
+            // Isko change karke (jaise 30%, 40%) perfect fit kar sakte ho
+            backgroundPosition: "center 25%", 
           }}
         />
       </AnimatePresence>
 
-      {/* 🔹 Bottom gradient so photo composition stays visible */}
+      {/* 🔹 Bottom gradient */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/0" />
 
-      {/* 🔹 Caption moved towards bottom (client feedback) */}
+      {/* 🔹 Caption */}
       <div className="relative z-10 flex flex-col items-center justify-end h-full px-4 pb-16 sm:pb-20 text-center">
         <AnimatePresence mode="wait">
           <motion.h2
@@ -77,7 +83,7 @@ export default function HeroSlider() {
         </AnimatePresence>
       </div>
 
-      {/* 🔹 Navigation Buttons (left / right) */}
+      {/* 🔹 Navigation Buttons */}
       <div className="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4 sm:px-8 z-20">
         <button
           onClick={() =>
@@ -100,7 +106,8 @@ export default function HeroSlider() {
         {slides.map((_, i) => (
           <div
             key={i}
-            className={`h-2 w-2 rounded-full transition-all duration-300 ${
+            onClick={() => setIndex(i)} 
+            className={`h-2 w-2 rounded-full transition-all duration-300 cursor-pointer ${
               i === index ? "bg-green-500 scale-125" : "bg-white/50"
             }`}
           />

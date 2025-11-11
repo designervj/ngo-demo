@@ -13,6 +13,12 @@ import OverViewPage from './components/sections/OverViewPage';
 import HistoryPage from './components/sections/HistoryPage';
 import MissionVisionPage from './components/sections/MissionVisionPage';
 import GuidingPrinciplesPage from './components/sections/GuidingPrinciplesPage';
+import PhotoGalleryPage from './components/sections/PhotoGalleryPage';
+import ProjectOverviewPage from './components/sections/ProjectOverviewPage';
+import ObjectivesPage from './components/sections/ObjectivesPage';
+import ApproachPage from './components/sections/ApproachPage';
+import FormationBuilding from './components/sections/activitiesPages/FormationBuilding';
+import ImpactPage from './components/sections/ImpactPage';
 
 
 
@@ -56,6 +62,17 @@ export default function App(){
          <Route path='/history' element={<HistoryPage/>}/>
           <Route path='/mission-and-vision' element={<MissionVisionPage/>}/>  {/* Placeholder for Mission and Vision page */}
           <Route path='/guiding-principles' element={<GuidingPrinciplesPage/>}/>  {/* Placeholder for Mission and Vision page */}
+          <Route path='/photo-gallery' element={<PhotoGalleryPage/>}/>  {/* Placeholder for Mission and Vision page */}
+<Route path='/project-overview' element={<ProjectOverviewPage/>}/>
+<Route path='/objectives' element={<ObjectivesPage/>}/>
+<Route path='/approach' element={<ApproachPage/>}/>
+<Route path='/formation-of-cbos-and-capacity-building' element={<FormationBuilding/>}/>
+<Route path='/impact' element={<ImpactPage/>}/>
+
+
+
+
+
 
 
 
