@@ -15,7 +15,7 @@ const ApproachPage = () => {
 
 
 
-       <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
+           <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
               {/* Background gradient + subtle pattern */}
               <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-600 to-green-800">
                 <div
