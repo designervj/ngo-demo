@@ -128,7 +128,7 @@ const Footer = () => {
 
       {/* 🔹 Address */}
       <div className="mt-3 flex items-start gap-3">
-        <MapPin className="w-14 h-14 text-white mt-1" />
+        <MapPin className="md:w-14 w-9 h-9 md:h-14  text-white mt-1" />
         <p className="text-base font-medium text-white leading-snug">
           3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008, Rajasthan, India
         </p>
