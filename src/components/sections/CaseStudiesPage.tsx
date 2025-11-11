@@ -36,9 +36,9 @@ backgroundSize: '20px 20px',
         </AnimatePresence>
       </div>
     </div>
-     <div className='container-xl mx-auto '>
+     {/* <div className='container-xl mx-auto '> */}
       <OurWork/>
-      </div>
+      {/* </div> */}
     </div>
   )
 }

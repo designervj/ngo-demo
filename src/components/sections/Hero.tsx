@@ -8,17 +8,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image:
-      "/assets/Image/slider-img1.jpg",
+      "/assets/Image/slider-img1.png",
     caption: "Enhance participation of women and youth in agriculture",
   },
   {
     image:
-      "/assets/Image/slider-img2.jpg",
+      "/assets/Image/slider-img2.png",
     caption: "Improve agricultural productivity and resource management",
   },
   {
     image:
-      "/assets/Image/slider-img3.jpg",
+      "/assets/Image/slider-img3.png",
     caption: "Strengthen community resilience and adaptive capacity",
   },
 ];

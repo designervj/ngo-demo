@@ -11,18 +11,47 @@ import {
   Linkedin,
 } from "lucide-react";
 
+// 🌟 **FIX #1: Link banane ke liye helper function**
+const slugify = (text: string) => {
+  if (typeof text !== 'string') return '#';
+  return (
+    '/' +
+    text
+      .toLowerCase()
+      .replace(/ & /g, "-and-") // '&' ko 'and' se replace karega
+      .replace(/[^a-z0-9\s-]/g, "") // faltu characters hatayega
+      .trim()
+      .replace(/\s+/g, "-") // space ko hyphen se replace karega
+      .replace(/-+/g, "-") // multiple hyphens ko ek karega
+  );
+};
+
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openNestedDropdown, setOpenNestedDropdown] = useState<string | null>(
+    null
+  );
 
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
+    if (openDropdown === name) {
+      setOpenNestedDropdown(null);
+    }
+  };
+
+  const toggleNestedDropdown = (name: string) => {
+    setOpenNestedDropdown(openNestedDropdown === name ? null : name);
   };
 
   const toggleMobileMenu = () => {
     setMobileOpen((prev) => {
       const next = !prev;
-      if (!next) setOpenDropdown(null);
+      if (!next) {
+        setOpenDropdown(null);
+        setOpenNestedDropdown(null);
+      }
       return next;
     });
   };
@@ -39,27 +68,24 @@ const Header = () => {
       ],
     },
     {
-  name: "SABL Project",
-  sub: [
-    "Project Overview",
-    "Objectives",
-    "Approach",
-    // 🌟 **FIX: "Activities" ab ek object hai jiska apna 'sub' array hai**
-    {
-      name: "Activities",
+      name: "SABL Project",
       sub: [
-        "Formation of CBOs & Capacity Building",
-        "Rainwater Harvesting & Dryland Farming",
-        "Horticulture & Animal Husbandry",
-        "Skill Development & Entrepreneurship and",
-        "Documentation & Advocacy",
+        "Project Overview",
+        "Objectives",
+        "Approach",
+        {
+          name: "Activities",
+          sub: [
+            "Formation of CBOs & Capacity Building",
+            "Rainwater Harvesting & Dryland Farming",
+            "Horticulture & Animal Husbandry",
+            "Skill Development & Entrepreneurship and",
+            "Documentation & Advocacy",
+          ],
+        },
+        "Impact",
       ],
     },
-
-     "Impact",
-    // Baaki ke items "Activities" ke andar chale gaye
-  ],
-},
     {
       name: "Resources",
       sub: [
@@ -78,15 +104,21 @@ const Header = () => {
       {/* TOP BAR */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3">
         <div className="flex items-center justify-between gap-4">
-          {/* LEFT: Logo + tagline (mobile) */}
+          {/* LEFT: Logo */}
           <div className="flex flex-col">
             <div className="text-[#6BA642] flex gap-4 font-extrabold text-3xl md:text-5xl tracking-tight leading-none">
-              <img src="/assets/Image/gravis-logo.png" alt="logo" className="h-16 w-auto" />
-               <img src="/assets/Image/eu-logo.jpg" alt="logo" className="h-16 w-auto" />
+              <img
+                src="/assets/Image/gravis-logo.svg"
+                alt="logo"
+                className="h-16 w-auto"
+              />
+              <img
+                src="/assets/Image/eu-logo.jpg"
+                alt="logo"
+                className="h-16 w-auto"
+              />
             </div>
-
-            {/* Tagline on mobile */}
-            <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
+            <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
               Strengthening Agriculture-based Livelihoods (SABL) in the Thar
               Desert
             </p>
@@ -99,11 +131,11 @@ const Header = () => {
               Desert
             </p>
 
+            {/* --- DESKTOP NAV --- */}
             <nav className="flex items-center gap-6 text-[15px] font-medium text-gray-800 relative">
-              <a href="#" className="hover:text-[#6BA642] transition">
+              <a href="/" className="hover:text-[#6BA642] transition">
                 Home
               </a>
-
               {menuItems.map((menu) => (
                 <div
                   key={menu.name}
@@ -114,7 +146,6 @@ const Header = () => {
                   <button className="flex items-center gap-1 hover:text-[#6BA642]">
                     {menu.name} <ChevronDown className="w-4 h-4" />
                   </button>
-
                   <div
                     className={`absolute left-0 mt-2 bg-white border border-gray-200 rounded-md shadow-md w-64 z-50 transition-all duration-150 ease-in-out origin-top ${
                       openDropdown === menu.name
@@ -122,113 +153,87 @@ const Header = () => {
                         : "opacity-0 scale-y-95 invisible"
                     }`}
                   >
-                   {menu.sub.map((item, index) => {
-  
-  // 1. Agar item simple string hai (jaise "Objectives")
-  if (typeof item === 'string') {
-    return (
-      <a
-        key={item}
-        href="#"
-        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
-      >
-        {item}
-      </a>
-    );
-  }
-
-  // 2. Agar item object hai (jaise "Activities")
-  // 'group' class hover ko control karne ke liye hai
-  return (
-    <div key={item.name} className="relative group">
-      <a
-        href="#"
-        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start flex justify-between items-center"
-      >
-        {item.name}
-        {/* Arrow icon ye dikhane ke liye ki isme sub-menu hai */}
-        <svg 
-          className="w-4 h-4 transition-transform duration-200 group-hover:rotate-90" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-
-      {/* 3. Ye hai Activities ka nested sub-menu */}
-      {/* Ye 'hidden' rehta hai aur 'group-hover:block' se dikhta hai */}
-      <div 
-        className="hidden group-hover:block absolute left-full top-0 w-max bg-white shadow-lg rounded-md border border-gray-100 z-10"
-      >
-        {item.sub.map((subItem) => (
-          <a
-            key={subItem}
-            href="#"
-            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-sm" // Font thoda chhota kar diya
-          >
-            {subItem}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-})}
+                    {/* DESKTOP map logic */}
+                    {menu.sub.map((item, index) => {
+                      if (typeof item === "string") {
+                        return (
+                          <a
+                            key={item}
+                            href={slugify(item)} // 🌟 Link add kiya
+                            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
+                          >
+                            {item}
+                          </a>
+                        );
+                      }
+                      // Ye 'group/nested' desktop par nested hover ke liye hai
+                      return (
+                        <div key={item.name} className="relative group/nested">
+                          <a
+                            href={slugify(item.name)} // 🌟 Link add kiya (Activities)
+                            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start flex justify-between items-center"
+                          >
+                            {item.name}
+                            <svg
+                              className="w-4 h-4 transition-transform duration-200 group-hover/nested:rotate-90"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M9 5l7 7-7 7"
+                              ></path>
+                            </svg>
+                          </a>
+                          <div className="hidden group-hover/nested:block absolute left-full top-0 w-max bg-white shadow-lg rounded-md border border-gray-100 z-10">
+                            {item.sub.map((subItem) => (
+                              <a
+                                key={subItem}
+                                href={slugify(subItem)} // 🌟 Link add kiya (Nested)
+                                className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-sm"
+                              >
+                                {subItem}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
-
-              <a href="#" className="hover:text-[#6BA642] transition  ">
+              <a href="/photo-gallery" className="hover:text-[#6BA642] transition">
                 Photo Gallery
               </a>
-              <a href="#" className="hover:text-[#6BA642] transition">
+              <a href="/get-involved" className="hover:text-[#6BA642] transition">
                 Get Involved
               </a>
             </nav>
           </div>
 
-          {/* RIGHT: Socials (desktop) + Mobile Menu Button */}
+          {/* RIGHT: Socials + Mobile Menu Button */}
           <div className="flex items-center gap-2">
-            {/* Desktop socials */}
             <div className="hidden md:flex items-center gap-1 text-[#6BA642]">
-              <a
-                href="#"
-                className="hover:bg-white p-2 rounded-full transition-all duration-300"
-              >
+              {/* ... social icons ... */}
+              <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
-
-              <a
-                href="#"
-                className="hover:bg-white p-2 rounded-full transition-all duration-300"
-              >
+              <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-
-              <a
-                href="#"
-                className="hover:bg-white p-2 rounded-full transition-all duration-300"
-              >
+              <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
-
-              <a
-                href="#"
-                className="hover:bg-white p-2 rounded-full transition-all duration-300"
-              >
+              <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-
-               <a
-                href="#"
-                className="hover:bg-white p-2 rounded-full transition-all duration-300"
-              >
+              <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
-
-            {/* Mobile menu button */}
             <button
               onClick={toggleMobileMenu}
               className="md:hidden flex items-center justify-center border border-gray-300 rounded-md p-2 bg-white/70"
@@ -240,16 +245,16 @@ const Header = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* --- MOBILE MENU --- */}
       <div
         className={`md:hidden bg-white border-t border-gray-200 px-4 py-3 text-[15px] font-medium text-gray-800 transition-all duration-300 ease-in-out ${
           mobileOpen
-            ? "max-h-[900px] opacity-100"
+            ? "max-h-[1000px] opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
         <nav className="space-y-3">
-          <a href="#" className="block py-1 hover:text-[#6BA642]">
+          <a href="/" className="block py-1 hover:text-[#6BA642]">
             Home
           </a>
 
@@ -270,71 +275,83 @@ const Header = () => {
                 />
               </button>
 
+              {/* L2 Dropdown */}
               {openDropdown === menu.name && (
                 <div className="pl-3 mt-2 space-y-1 text-[14px] text-gray-700">
-                  {menu.sub.map((item, index) => {
-  
-  // 1. Agar item simple string hai (jaise "Objectives")
-  if (typeof item === 'string') {
-    return (
-      <a
-        key={item}
-        href="#"
-        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
-      >
-        {item}
-      </a>
-    );
-  }
+                  
+                  {/* MOBILE specific map logic */}
+                  {menu.sub.map((item) => {
+                    
+                    // 1. Agar item simple string hai
+                    if (typeof item === 'string') {
+                      return (
+                        <a
+                          key={item}
+                          href={slugify(item)} // 🌟 Link add kiya
+                          className="block rounded-md px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
+                        >
+                          {item}
+                        </a>
+                      );
+                    }
 
-  // 2. Agar item object hai (jaise "Activities")
-  // 'group' class hover ko control karne ke liye hai
-  return (
-    <div key={item.name} className="relative group">
-      <a
-        href="#"
-        className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start flex justify-between items-center"
-      >
-        {item.name}
-        {/* Arrow icon ye dikhane ke liye ki isme sub-menu hai */}
-        <svg 
-          className="w-4 h-4 transition-transform duration-200 group-hover:rotate-90" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-
-      {/* 3. Ye hai Activities ka nested sub-menu */}
-      {/* Ye 'hidden' rehta hai aur 'group-hover:block' se dikhta hai */}
-      <div 
-        className="hidden group-hover:block absolute left-full top-0 w-max bg-white shadow-lg rounded-md border border-gray-100 z-10"
-      >
-        {item.sub.map((subItem) => (
-          <a
-            key={subItem}
-            href="#"
-            className="block px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-sm" // Font thoda chhota kar diya
-          >
-            {subItem}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-})}
+                    // 2. Agar item object hai (Activities)
+                    const isNestedOpen = openNestedDropdown === item.name;
+                    return (
+                      <div key={item.name} className="py-1">
+                        {/* Pehle, Activities ke liye ek alag se link */}
+                        <a 
+                          href={slugify(item.name)} // 🌟 Link add kiya (Activities)
+                          className="block rounded-md px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start"
+                        >
+                          {item.name}
+                        </a>
+                        {/* Phir, nested items ke liye toggle button */}
+                        <button
+                          onClick={() => toggleNestedDropdown(item.name)}
+                          className="flex items-center justify-between w-full rounded-md px-4 py-2 hover:bg-[#f3f8f2] text-gray-700 text-start text-[13px] text-gray-600"
+                        >
+                          <span>View Activities Sub-menu</span>
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform ${
+                              isNestedOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        
+                        {/* 3. L3 Dropdown (Activities ka sub-menu) */}
+                        {isNestedOpen && (
+                          <div className="pl-4 mt-1 space-y-1 text-[13px] text-gray-600 border-l border-gray-200 ml-4">
+                            {item.sub.map((subItem) => (
+                              <a
+                                key={subItem}
+                                href={slugify(subItem)} // 🌟 Link add kiya (Nested)
+                                className="block rounded-md px-4 py-2 hover:bg-[#f3f8f2] text-start"
+                              >
+                                {subItem}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </div>
           ))}
 
           <div className=" pt-1">
-            <a href="#" className="block py-3 border-t border-gray-100 hover:text-[#6BA642]">
-              Photo Gallery 
+            <a
+              href="/photo-gallery"
+              className="block py-3 border-t border-gray-100 hover:text-[#6BA642]"
+            >
+              Photo Gallery
             </a>
-            <a href="#" className="block py-1 pt-3 hover:text-[#6BA642] border-t border-gray-100">
+            <a
+              href="/get-involved"
+              className="block py-1 pt-3 hover:text-[#6BA642] border-t border-gray-100"
+            >
               Get Involved
             </a>
           </div>

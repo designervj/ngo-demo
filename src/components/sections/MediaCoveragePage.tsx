@@ -38,12 +38,9 @@ backgroundSize: '20px 20px',
       </div>
     </div>
    
-   <div className='container-xl mx-auto '>
-       {/* <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          What’s New
-        </h2> */}
+ 
       <MediaSection/>
-      </div>
+ 
     </div>
   )
 }

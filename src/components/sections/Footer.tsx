@@ -35,7 +35,7 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="mt-6 flex items-center gap-4">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn,].map(
+            {[FaFacebookF, FaInstagram, FaLinkedinIn,FaTwitter,FaYoutube].map(
               (Icon, i) => (
                 <a
                   key={i}

@@ -8,6 +8,11 @@ import { Route, Routes } from 'react-router-dom';
 import Footer from './components/sections/Footer';
 import CaseStudiesPage from './components/sections/CaseStudiesPage';
 import MediaCoveragePage from './components/sections/MediaCoveragePage';
+import WhatWeDoPage from './components/sections/WhatWeDoPage';
+import OverViewPage from './components/sections/OverViewPage';
+import HistoryPage from './components/sections/HistoryPage';
+import MissionVisionPage from './components/sections/MissionVisionPage';
+import GuidingPrinciplesPage from './components/sections/GuidingPrinciplesPage';
 
 
 
@@ -44,7 +49,18 @@ export default function App(){
       <Routes>
         <Route path='/' element={<HomePage/>}/>
          <Route path='/case-studies' element={<CaseStudiesPage/>}/>
-         <Route path='/media-coverage' element={<MediaCoveragePage/>}/>
+         <Route path='/media' element={<MediaCoveragePage/>}/>
+         <Route path='/what-we-do' element={<WhatWeDoPage/>}/>
+         <Route path='/overview' element={<OverViewPage/>}/>
+         <Route path='/history' element={<HistoryPage/>}/>
+         <Route path='/history' element={<HistoryPage/>}/>
+          <Route path='/mission-and-vision' element={<MissionVisionPage/>}/>  {/* Placeholder for Mission and Vision page */}
+          <Route path='/guiding-principles' element={<GuidingPrinciplesPage/>}/>  {/* Placeholder for Mission and Vision page */}
+
+
+
+
+         
 
         {/* <Route path='/product' element={<ProductPage/>}/> */}
        
