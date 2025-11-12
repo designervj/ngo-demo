@@ -20,7 +20,7 @@ export default function HomePage() {
       <Testimonials />
 
    {/* <NewsSection /> */}
-        <ContactUs/>
+        {/* <ContactUs/> */}
     </main>
   );
 }

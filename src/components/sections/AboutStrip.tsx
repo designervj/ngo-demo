@@ -85,9 +85,9 @@ export default function AboutApproach() {
                   </div>
                   <ul className="space-y-3">
                     {section.points.map((point, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-center gap-2">
                         {/* Bullet point color is now white */}
-                        <span className="text-white mt-1.5">•</span> 
+                        <span className="text-white ">•</span> 
                         <span className="text-gray-100">{point}</span>
                       </li>
                     ))}

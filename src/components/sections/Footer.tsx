@@ -18,10 +18,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#69a242] text-gray-800">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-[50%_50%] gap-12">
         {/* Brand */}
-        <div>
-          {/* <img src={footerLogo} alt="footer logo" className="h-10 w-auto" /> */}
+        <div className="w-2/3">
+        
           <div className="flex items-center gap-3">
             <span className="text-[#fff] font-bold text-3xl">SABL</span>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
             build a better future for rural communities.
           </p>
 
-          {/* Social Icons */}
+        
           <div className="mt-6 flex items-center gap-4">
             {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
               (Icon, i) => (
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
+        {/* <div>
           <h4 className="text-xl font-semibold text-white mb-5 border-l-4 border-[#fff] pl-3">
             Quick Links
           </h4>
@@ -68,12 +68,12 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Customer Area */}
-        <div>
+        {/* <div>
           <h4 className="text-xl font-semibold mb-5 text-white border-l-4 border-[#fff] pl-3">
-            Customer Area
+            Customer Area 
           </h4>
           <ul className="space-y-3  text-white">
             {[
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact */}
          <div>
@@ -100,9 +100,9 @@ const Footer = () => {
         Contact
       </h4>
 
-      <p className="text-white">
+      {/* <p className="text-white">
         Have any questions or need help? Reach out to us anytime.
-      </p>
+      </p> */}
 
       {/* 🔹 Phone */}
       <div className="mt-3 flex items-center gap-3">
@@ -127,8 +127,8 @@ const Footer = () => {
       </div>
 
       {/* 🔹 Address */}
-      <div className="mt-3 flex items-start gap-3">
-        <MapPin className="md:w-14 w-9 h-9 md:h-14  text-white mt-1" />
+      <div className="mt-3 flex items-center gap-3">
+        <MapPin className="md:w-5 w-9 h-9 md:h-5  text-white mt-1" />
         <p className="text-base font-medium text-white leading-snug">
           3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008, Rajasthan, India
         </p>

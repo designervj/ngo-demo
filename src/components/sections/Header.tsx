@@ -10,6 +10,7 @@ import {
   X,
   Linkedin,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // 🌟 **FIX #1: Link banane ke liye helper function**
 const slugify = (text: string) => {
@@ -107,16 +108,19 @@ const Header = () => {
           {/* LEFT: Logo */}
           <div className="flex flex-col">
             <div className="text-[#6BA642] flex gap-4 font-extrabold text-3xl md:text-5xl tracking-tight leading-none">
-              <img
+             <Link to="./"> <img
                 src="/assets/Image/gravis-logo.svg"
                 alt="logo"
                 className="h-16 w-auto"
               />
+              </Link>
+              <Link to="./">
               <img
                 src="/assets/Image/eu-logo.jpg"
                 alt="logo"
                 className="h-16 w-auto"
               />
+              </Link>
             </div>
             <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
               Strengthening Agriculture-based Livelihoods (SABL) in the Thar
@@ -247,7 +251,7 @@ const Header = () => {
 
       {/* --- MOBILE MENU --- */}
       <div
-        className={`md:hidden bg-white border-t border-gray-200 px-4 py-3 text-[15px] font-medium text-gray-800 transition-all duration-300 ease-in-out ${
+        className={` absolute w-full md:hidden bg-white border-t border-gray-200 px-4 py-3 text-[15px] font-medium text-gray-800 transition-all duration-300 ease-in-out ${
           mobileOpen
             ? "max-h-[1000px] opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
