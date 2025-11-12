@@ -6,25 +6,25 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/assets/Image/SliderImage (1).png",
+    image: "/assets/Image/home-slider/enhance.png",
     caption: "Enhance participation of women and youth in agriculture",
   },
-  {
-    image: "/assets/Image/SliderImage (2).png",
+   {
+    image: "/assets/Image/home-slider/foster.png",
+    caption: "Foster entrepreneurship and market linkages",
+  },
+   {
+    image: "/assets/Image/home-slider/improve.png",
     caption: "Improve agricultural productivity and resource management",
   },
   {
-    image: "/assets/Image/SliderImage (3).png",
-    caption: "Secure water resources with traditional harvesting techniques",
+    image: "/assets/Image/home-slider/Strengthen.png",
+    caption: "Strengthen community resilience and adaptive capacity",
   },
   {
-    image: "/assets/Image/SliderImage (4).png",
-    caption: "Empower local communities through skill development",
-  },
-  {
-    image: "/assets/Image/SliderImage (5).png",
-    caption: "Promote sustainable livelihoods for long-term food security",
-  },
+    image: "/assets/Image/home-slider/Facilitate.png",
+    caption: "Facilitate learning and knowledge sharing",
+  }
 ];
 
 export default function HeroSlider() {

@@ -10,7 +10,7 @@ export default function ContactSection() {
     >
       <div className="absolute inset-0 bg-[#fff]/80"></div>
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#6c4c35] mb-6">
           Contact Us
         </h2>
         <p className="text-gray-700 mb-12">
@@ -23,7 +23,7 @@ export default function ContactSection() {
             <div className="flex items-start gap-4">
               <MapPin className="w-6 h-6 text-[#69a242]" />
               <div>
-                <h4 className="font-semibold text-gray-900">Address</h4>
+                <h4 className="font-semibold text-[#69a242]">Address</h4>
                 <p className="text-gray-600">
                3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008, Rajasthan, India
                 </p>
@@ -33,7 +33,7 @@ export default function ContactSection() {
             <div className="flex items-start gap-4">
               <Mail className="w-6 h-6 text-[#69a242]" />
               <div>
-                <h4 className="font-semibold text-gray-900">Email</h4>
+                <h4 className="font-semibold text-[#69a242]">Email</h4>
                 <p className="text-gray-600">email@gravis.org.in</p>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function ContactSection() {
             <div className="flex items-start gap-4">
               <PhoneCall className="w-6 h-6 text-[#69a242]" />
               <div>
-                <h4 className="font-semibold text-gray-900">Phone</h4>
+                <h4 className="font-semibold text-[#69a242]">Phone</h4>
                 <p className="text-gray-600">+91-291-2785-116</p>
               </div>
             </div>
