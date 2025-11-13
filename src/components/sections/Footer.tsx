@@ -20,10 +20,10 @@ const Footer = () => {
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-[50%_50%] gap-12">
         {/* Brand */}
-        <div className="w-[75%]">
+        <div className="w-[100%] md:w-[75%]">
         
           <div className="flex items-center gap-3">
-            <span className="text-[#fff] font-bold text-3xl">
+            <span className="text-[#fff] font-bold text-2xl md:text-3xl">
               Strengthening Agriculture-Based Livelihoods (SABL) in the Thar Desert
             </span>
           </div>
