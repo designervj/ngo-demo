@@ -20,10 +20,12 @@ const Footer = () => {
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-[50%_50%] gap-12">
         {/* Brand */}
-        <div className="w-2/3">
+        <div className="w-[75%]">
         
           <div className="flex items-center gap-3">
-            <span className="text-[#fff] font-bold text-3xl">SABL</span>
+            <span className="text-[#fff] font-bold text-3xl">
+              Strengthening Agriculture-Based Livelihoods (SABL) in the Thar Desert
+            </span>
           </div>
           <p className="mt-4 text-white leading-relaxed text-base">
             Empowering sustainable agriculture and innovative technology to
@@ -31,18 +33,7 @@ const Footer = () => {
           </p>
 
         
-          <div className="mt-6 flex items-center gap-4">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="bg-gray-200 hover:bg-[#fff] hover:text-white p-2 rounded-full transition-all duration-300">
-                  <Icon />
-                </a>
-              )
-            )}
-          </div>
+        
         </div>
 
         {/* Quick Links */}
@@ -115,6 +106,7 @@ const Footer = () => {
         </a>
       </div>
 
+
       {/* 🔹 Email */}
       <div className="mt-3 flex items-center gap-3">
         <Mail className="w-5 h-5 text-white" />
@@ -133,7 +125,23 @@ const Footer = () => {
           3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008, Rajasthan, India
         </p>
       </div>
+
+        <div className="mt-6 flex items-center gap-4">
+            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
+              (Icon, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  className="bg-gray-200 hover:bg-[#fff] hover:text-[#69a242] p-2 rounded-full transition-all duration-300">
+                  <Icon />
+                </a>
+              )
+            )}
+          </div>
+
     </div>
+
+    
       </div>
 
       {/* Divider */}
