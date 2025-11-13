@@ -123,7 +123,7 @@ const Header = () => {
               </Link>
             </div>
             <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
-              Strengthening Agriculture-Based Livelihoods (SABL) in the Thar
+              Strengthening Agriculture-Based Livelihoods (SABL) In The Thar
               Desert
             </p>
           </div>
@@ -131,7 +131,7 @@ const Header = () => {
           {/* CENTER: Tagline + Nav (desktop only) */}
           <div className="hidden md:flex flex-col items-center">
             <p className=" text-[#6c4c35] text-[18px] font-semibold mb-2 text-center">
-              Strengthening Agriculture-Based Livelihoods (SABL) in the Thar
+              Strengthening Agriculture-Based Livelihoods (SABL) In The Thar
               Desert
             </p>
 

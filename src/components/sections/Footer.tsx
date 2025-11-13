@@ -24,7 +24,7 @@ const Footer = () => {
         
           <div className="flex items-center gap-3">
             <span className="text-[#fff] font-bold text-2xl md:text-3xl">
-              Strengthening Agriculture-Based Livelihoods (SABL) in the Thar Desert
+              Strengthening Agriculture-Based Livelihoods (SABL) In The Thar Desert
             </span>
           </div>
           <p className="mt-4 text-white leading-relaxed text-base">
