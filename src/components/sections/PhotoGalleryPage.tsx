@@ -31,8 +31,8 @@ const PhotoGalleryPage = () => {
 
   return (
     <div className="bg-[#F7F8F6]">
-      {/* ---------- Hero Section ---------- */}
-      <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
+    
+      {/* <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-600 to-green-800">
           <div
             className="absolute inset-0 opacity-10"
@@ -64,7 +64,7 @@ const PhotoGalleryPage = () => {
           </motion.p>
         </motion.div>
 
-        {/* Decorative wave */}
+    
         <div className="absolute bottom-0 w-full overflow-hidden leading-[0] rotate-180">
           <svg
             className="relative block w-[calc(150%+1.3px)] h-[100px]"
@@ -78,7 +78,21 @@ const PhotoGalleryPage = () => {
             ></path>
           </svg>
         </div>
-      </div>
+      </div> */}
+
+         <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  className="relative z-10 text-center text-white px-6">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+                   Photo Gallery
+                  </h1>
+                </motion.div>
+              </div>
+            </div>
 
       {/* ---------- Gallery Section ---------- */}
       <div className="max-w-7xl mx-auto px-4 py-24">

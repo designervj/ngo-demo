@@ -6,10 +6,10 @@ import React from "react";
 const OverViewPage = () => {
   return (
     <div className="w-full">
-      {/* 🌄 Hero Section */}
-      <div className="relative w-full h-[70vh] overflow-hidden flex items-center justify-center">
+      
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
         {/* Gradient + Pattern Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-800 via-green-700 to-green-900">
+        <div className="absolute inset-0 bg-[#123751]">
           {/* Decorative Texture */}
           <div
             className="absolute inset-0 opacity-[0.08]"
@@ -20,7 +20,7 @@ const OverViewPage = () => {
           ></div>
 
           {/* Floating light effect */}
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div>
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
         </div>
 
         {/* Foreground Content */}
@@ -34,25 +34,12 @@ const OverViewPage = () => {
             Overview
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">
-            GRAVIS empowers rural India through innovation, inclusion, and Gandhian
-            values — transforming communities with compassion and collaboration.
+           
           </p>
         </motion.div>
 
         {/* Decorative Bottom Wave */}
-        <div className="absolute bottom-0 w-full overflow-hidden leading-[0] rotate-180">
-          <svg
-            className="relative block w-[calc(150%+1.3px)] h-[100px]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44C183.09,83.15,65.54,111.23,0,120V0H1200V27.35C1131.36,48.69,959.75,83.94,721.39,66.16,548.75,53.63,404.41,42.92,321.39,56.44Z"
-              fill="#F7F8F6"
-            ></path>
-          </svg>
-        </div>
+      
       </div>
 
       {/* 📜 Main Overview Content */}
@@ -120,7 +107,7 @@ const OverViewPage = () => {
         </div>
 
         {/* 💡 Bottom Highlight Box */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -136,7 +123,12 @@ const OverViewPage = () => {
             evidence-based studies — to maximize impact and promote replication across
             India and beyond.
           </p>
-        </motion.div>
+        </motion.div> */}
+        <div className="flex gap-2 justify-center mt-6 mx-auto max-w-6xl">
+          <img src="assets/Image/image1.png" alt="OverView Image" className="w-1/2 rounded-md"></img>
+          <img src="assets/Image/image2.png" alt="Overview Image" className="w-1/2 rounded-md"></img>
+
+        </div>
       </section>
     </div>
   );

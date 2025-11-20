@@ -126,19 +126,7 @@ const Footer = () => {
         </p>
       </div>
 
-        <div className="mt-6 flex items-center gap-4">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="bg-gray-200 hover:bg-[#fff] hover:text-[#69a242] p-2 rounded-full transition-all duration-300">
-                  <Icon />
-                </a>
-              )
-            )}
-          </div>
-
+       
     </div>
 
     

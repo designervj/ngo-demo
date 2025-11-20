@@ -40,54 +40,43 @@ const GuidingPrinciplesPage = () => {
   return (
     <div className="w-full">
       {/* 🌿 Hero Section */}
-      <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
-        {/* Gradient + pattern background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-600 to-green-800">
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage:
-                "url('data:image/svg+xml,%3Csvg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" stroke=\"%23fff\" stroke-width=\"0.5\"%3E%3Cpath d=\"M0 40 Q40 0 80 40 T160 40\"/%3E%3Cpath d=\"M0 60 Q40 20 80 60 T160 60\"/%3E%3C/g%3E%3C/svg%3E')",
-              backgroundSize: "cover",
-            }}
-          ></div>
-        </div>
+     
 
-        {/* Foreground text */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="relative z-10 text-white px-6"
-        >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight drop-shadow-lg">
-            Guiding Principles
-          </h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
-          >
-            GRAVIS’s approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment.
-          </motion.p>
-        </motion.div>
 
-        {/* Decorative wave */}
-        <div className="absolute bottom-0 w-full overflow-hidden leading-[0] rotate-180">
-          <svg
-            className="relative block w-[calc(150%+1.3px)] h-[100px]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44C183.09,83.15,65.54,111.23,0,120V0H1200V27.35C1131.36,48.69,959.75,83.94,721.39,66.16,548.75,53.63,404.41,42.92,321.39,56.44Z"
-              fill="#F7F8F6"
-            ></path>
-          </svg>
-        </div>
-      </div>
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
+                          {/* Gradient + Pattern Background */}
+                          <div className="absolute inset-0 bg-[#123751]">
+                            {/* Decorative Texture */}
+                            <div
+                              className="absolute inset-0 opacity-[0.08]"
+                              style={{
+                                backgroundImage:
+                                  "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                              }}
+                            ></div>
+                  
+                            {/* Floating light effect */}
+                            {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
+                          </div>
+                  
+                          {/* Foreground Content */}
+                          <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="relative z-10 text-center text-white px-6"
+                          >
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+                              Guiding Principles
+      
+            
+                            </h1>
+                            
+                          </motion.div>
+                  
+                          {/* Decorative Bottom Wave */}
+                        
+                        </div>
 
       {/* 📜 Principles Section */}
       <section className="bg-[#F7F8F6] py-20 px-6 md:px-20">

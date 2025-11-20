@@ -52,59 +52,40 @@ export default function WhatWeDoPage() {
   return (
     <div className="w-full">
       {/* 🌟 HERO SECTION */}
-<div className="relative w-full h-[65vh] overflow-hidden flex items-center justify-center">
-  {/* 🌄 Gradient + Pattern Background */}
-  <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-600 to-green-800">
-    {/* Subtle SVG wave pattern overlay */}
-    <div
-      className="absolute inset-0 opacity-10"
-      style={{
-        backgroundImage:
-          "url('data:image/svg+xml,%3Csvg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" stroke=\"%23fff\" stroke-width=\"0.5\"%3E%3Cpath d=\"M0 40 Q40 0 80 40 T160 40\"/%3E%3Cpath d=\"M0 60 Q40 20 80 60 T160 60\"/%3E%3C/g%3E%3C/svg%3E')",
-        backgroundSize: "cover",
-      }}
-    ></div>
 
-    {/* Animated floating gradient lights */}
-    <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.12),transparent_60%)] animate-pulse-slow"></div>
-  </div>
 
-  {/* 🌿 Foreground Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    className="relative pb-10 z-10 flex flex-col items-center justify-center text-center text-white px-6"
-  >
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight drop-shadow-lg">
-      What We Do
-    </h1>
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.3 }}
-      className="max-w-3xl mx-auto mt-5 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
-    >
-      GRAVIS empowers communities through participation, planning, and partnerships — 
-      building a resilient and self-reliant future.
-    </motion.p>
-  </motion.div>
-
-  {/* Decorative SVG Wave at Bottom */}
-  <div className="absolute bottom-0 w-full overflow-hidden leading-[0] rotate-180">
-    <svg
-      className="relative block w-[calc(150%+1.3px)] h-[100px]"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1200 120"
-      preserveAspectRatio="none"
-    >
-      <path
-        d="M321.39,56.44C183.09,83.15,65.54,111.23,0,120V0H1200V27.35C1131.36,48.69,959.75,83.94,721.39,66.16,548.75,53.63,404.41,42.92,321.39,56.44Z"
-        fill="#F7F8F6"
-      ></path>
-    </svg>
-  </div>
-</div>
+  <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
+                          {/* Gradient + Pattern Background */}
+                          <div className="absolute inset-0 bg-[#123751]">
+                            {/* Decorative Texture */}
+                            <div
+                              className="absolute inset-0 opacity-[0.08]"
+                              style={{
+                                backgroundImage:
+                                  "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                              }}
+                            ></div>
+                  
+                            {/* Floating light effect */}
+                            {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
+                          </div>
+                  
+                          {/* Foreground Content */}
+                          <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="relative z-10 text-center text-white px-6"
+                          >
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+                              What We Do
+                            </h1>
+                            
+                          </motion.div>
+                  
+                          {/* Decorative Bottom Wave */}
+                        
+                        </div>
 
 
 
@@ -113,7 +94,8 @@ export default function WhatWeDoPage() {
       {/* 🌿 INTRO SECTION */}
       <section className="max-w-5xl mx-auto py-16 px-6 text-center">
         <p className="text-gray-700 text-lg leading-relaxed">
-          GRAVIS empowers communities by ensuring active participation in decision-making and project planning. Recognizing the interconnectedness of rural challenges, we adopt a holistic approach—tackling multiple issues simultaneously to foster overall improvement. Through partnerships with CBOs, we enhance the living standards of villagers.
+          GRAVIS empowers communities by ensuring active participation in decision-making and project planning. Recognizing the interconnectedness of rural challenges, we adopt a holistic approach, tackling multiple issues simultaneously to foster overall improvement. Through partnerships with CBOs, we enhance the living standards of villagers.
+
         </p>
       </section>
 

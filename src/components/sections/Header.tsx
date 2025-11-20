@@ -90,12 +90,11 @@ const Header = () => {
     {
       name: "Resources",
       sub: [
-        "Publications (Learning Documents)",
-        "Advocacy Briefs",
+        "Publications",
         "Case Studies",
-        "Annual Reports",
         "IEC Materials",
         "Media",
+        "Photo Gallery"
       ],
     },
   ];
@@ -209,9 +208,9 @@ const Header = () => {
                   </div>
                 </div>
               ))}
-              <a href="/photo-gallery" className="hover:text-[#6BA642] transition">
+              {/* <a href="/photo-gallery" className="hover:text-[#6BA642] transition">
                 Photo Gallery
-              </a>
+              </a> */}
               <a href="/get-involved" className="hover:text-[#6BA642] transition">
                 Get Involved
               </a>
