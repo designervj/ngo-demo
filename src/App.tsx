@@ -19,6 +19,9 @@ import ObjectivesPage from './components/sections/ObjectivesPage';
 import ApproachPage from './components/sections/ApproachPage';
 import FormationBuilding from './components/sections/activitiesPages/FormationBuilding';
 import ImpactPage from './components/sections/ImpactPage';
+import PublicationsPage from './components/sections/PublicationsPage';
+import IECMaterialspage from './components/sections/IECMaterialspage';
+import GetInvolvedPage from './components/sections/GetInvolvedPage';
 
 
 
@@ -68,6 +71,11 @@ export default function App(){
 <Route path='/approach' element={<ApproachPage/>}/>
 <Route path='/formation-of-cbos-and-capacity-building' element={<FormationBuilding/>}/>
 <Route path='/impact' element={<ImpactPage/>}/>
+<Route path='/publications' element={<PublicationsPage/>}/>
+<Route path='/iec-materials' element={<IECMaterialspage/>}/>
+<Route path='/get-involved' element={<GetInvolvedPage/>}/>
+
+
 
 
 

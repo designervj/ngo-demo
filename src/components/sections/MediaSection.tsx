@@ -12,7 +12,7 @@ export default function MediaSection() {
         "Our new initiative helps farmers in Rajasthan revive drylands through sustainable irrigation and soil restoration practices.",
       date: "November 5, 2025",
       image:
-        "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80",
+        "./assets/Image/homeslider2.png",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default function MediaSection() {
         "Young volunteers are being trained to lead climate education sessions in over 30 rural schools, inspiring action from the next generation.",
       date: "October 29, 2025",
       image:
-        "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80",
+       "./assets/Image/img (1).jpeg",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export default function MediaSection() {
         "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
       date: "October 15, 2025",
       image:
-        "/assets/Image/blog-img.jpg",
+         "./assets/Image/img (2).jpg",
     },
      {
       id: 4,
@@ -42,7 +42,7 @@ export default function MediaSection() {
         "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
       date: "October 15, 2025",
       image:
-        "/assets/Image/blog-img.jpg",
+      "./assets/Image/img (3).JPG",
     },
      {
       id: 5,
@@ -52,7 +52,7 @@ export default function MediaSection() {
         "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
       date: "October 15, 2025",
       image:
-        "/assets/Image/blog-img.jpg",
+        "./assets/Image/img (4).JPG",
     },
      {
       id: 6,
@@ -62,7 +62,39 @@ export default function MediaSection() {
         "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
       date: "October 15, 2025",
       image:
-        "/assets/Image/blog-img.jpg",
+        "./assets/Image/img (6).jpg",
+    },
+
+     {
+      id: 6,
+      title:
+        "Advancing Women’s Rights in Land Ownership Across South Asia",
+      description:
+        "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
+      date: "October 15, 2025",
+      image:
+        "./assets/Image/img (8).jpeg",
+    },
+     {
+      id: 6,
+      title:
+        "Advancing Women’s Rights in Land Ownership Across South Asia",
+      description:
+        "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
+      date: "October 15, 2025",
+      image:
+        "./assets/Image/impact-img-1.png",
+    },
+
+     {
+      id: 7,
+      title:
+        "Advancing Women’s Rights in Land Ownership Across South Asia",
+      description:
+        "Our women-led advocacy network continues to support land rights campaigns and policy change efforts across India, Nepal, and Bangladesh.",
+      date: "October 15, 2025",
+      image:
+        "./assets/Image/object-img 1.png",
     },
   ];
 
@@ -74,11 +106,11 @@ export default function MediaSection() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
        
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-4">
           {news.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-md shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={item.image}
@@ -86,11 +118,11 @@ export default function MediaSection() {
                 className="h-56 w-full object-cover"
               />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-snug">
+                <h3 className="text-md font-semibold text-gray-900 mb-2 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 flex-grow">{item.description}</p>
-                <div className="mt-4 text-sm text-gray-500">{item.date}</div>
+             
+                <div className="mt-0 text-sm text-gray-500">{item.date}</div>
               </div>
             </div>
           ))}
