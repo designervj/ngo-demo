@@ -38,18 +38,17 @@ const FormationBuilding = () => {
           {/* --------- Paragraph 1 --------- */}
           <p className="text-lg text-gray-700">
             The project places significant emphasis on strengthening
-            <span className="font-semibold">
-              {" "}
-              Community-Based Organizations (CBOs){" "}
-            </span>
+         
+          
+              Community-Based Organizations (CBOs)
+        
             through both formation and extensive capacity building, targeting
-            <span className="font-semibold"> 160 CBOs</span>, specifically
-            <span className="font-semibold">
-              {" "}
+          160 CBOs, specifically
+         
               80 Intergenerational Learning Groups (ILGs)
-            </span>
-            and{" "}
-            <span className="font-semibold">80 Self-Help Groups (SHGs)</span>.
+          
+            and
+         80 Self-Help Groups (SHGs).
             This initiative is crucial for empowering local communities,
             particularly women and youth, to lead agricultural livelihood
             development.
@@ -60,18 +59,18 @@ const FormationBuilding = () => {
             Activities under this output include the formation of new ILGs and
             SHGs, or the identification and strengthening of existing ones in
             each of the
-            <span className="font-semibold"> 20 project villages</span>. Each
+           20 project villages. Each
             ILG and SHG will comprise approximately
-            <span className="font-semibold"> 15 members</span>, with ILGs
+           15 members, with ILGs
             including young girls and boys, adult women, and older women, while
             SHGs focus on adult and older women. These groups will undergo
             comprehensive leadership and management training, covering aspects
             like CBO roles, intergenerational exchange, and group
             sustainability. Additionally, technical trainings will be provided
-            to enhance their understanding of{" "}
-            <span className="font-semibold">
+            to enhance their understanding of
+         
               Agriculture-Based Livelihoods (ABL)
-            </span>
+           
             , focusing on improved rainwater harvesting, sustainable
             agriculture, crop diversification, and rain-fed farming methods.
           </p>

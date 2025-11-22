@@ -22,6 +22,9 @@ import ImpactPage from './components/sections/ImpactPage';
 import PublicationsPage from './components/sections/PublicationsPage';
 import IECMaterialspage from './components/sections/IECMaterialspage';
 import GetInvolvedPage from './components/sections/GetInvolvedPage';
+import RainwaterFarming from './components/sections/RainwaterFarming';
+import AnimalHusbandry from './components/sections/activitiesPages/AnimalHusbandry';
+import SkillDevelopmentPage from './components/sections/activitiesPages/SkillDevelopmentPage';
 
 
 
@@ -74,6 +77,18 @@ export default function App(){
 <Route path='/publications' element={<PublicationsPage/>}/>
 <Route path='/iec-materials' element={<IECMaterialspage/>}/>
 <Route path='/get-involved' element={<GetInvolvedPage/>}/>
+<Route path='/rainwater-harvesting-and-dryland-farming' element={<RainwaterFarming/>}/>
+<Route path='/horticulture-and-animal-husbandry' element={<AnimalHusbandry/>}/>
+<Route path='/skill-development-and-entrepreneurship-and' element={<SkillDevelopmentPage/>}/>
+<Route path='/documentation-and-advocacy' element={<SkillDevelopmentPage/>}/>
+
+
+
+
+
+
+
+
 
 
 
