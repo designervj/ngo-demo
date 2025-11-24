@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-// 🌟 Video + Text data
 const videos = [
   {
     id: 1,
@@ -33,37 +32,44 @@ const videos = [
 
 const WhatsNew = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const videoRefs = useRef<HTMLVideoElement[]>([]);
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const [swiperInstance, setSwiperInstance] = useState<any>(null);
 
-  // ✅ Ensure navigation buttons are attached even after render
   useEffect(() => {
-    if (
-      swiperInstance &&
-      swiperInstance.params &&
-      swiperInstance.params.navigation
-    ) {
-      const navigation = swiperInstance.params.navigation as any;
-      navigation.prevEl = prevRef.current;
-      navigation.nextEl = nextRef.current;
+    if (swiperInstance && swiperInstance.params?.navigation) {
+      swiperInstance.params.navigation.prevEl = prevRef.current;
+      swiperInstance.params.navigation.nextEl = nextRef.current;
       swiperInstance.navigation.destroy();
       swiperInstance.navigation.init();
       swiperInstance.navigation.update();
     }
   }, [swiperInstance]);
 
+  // 🔊 Stop previous video on slide change
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (video) {
+        index === activeIndex ? video.play() : video.pause();
+      }
+    });
+  }, [activeIndex]);
+
+  // 🔊 Click to unmute
+  const handleVideoClick = (index: number) => {
+    const video = videoRefs.current[index];
+    if (!video) return;
+    video.muted = !video.muted;
+  };
+
   return (
     <section className="relative bg-[#F8F7F2] py-20">
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/gray-lines.png')] opacity-5"></div>
-
       <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
-        {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#123751] mb-5">
           What's New
         </h2>
 
-        {/* Swiper Slider */}
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
@@ -72,28 +78,30 @@ const WhatsNew = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           className="relative mt-16"
         >
-          {videos.map((video) => (
-            <SwiperSlide key={video.id}>
-              <div className="flex justify-center items-center bg-white rounded-2xl shadow-sm p-4 md:p-8 border border-gray-100 transition-all duration-500 overflow-hidden">
-                <div
-                  className="relative w-full"
-                  style={{ paddingTop: "56.25%" }}
-                >
-                  {/* 16:9 Aspect Ratio */}
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-xl"
-                    src={video.url}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </SwiperSlide>
+          {videos.map((video, index) => (
+         <SwiperSlide key={video.id}>
+  <div className="flex justify-center items-center bg-white rounded-2xl shadow-sm p-4 md:p-8 border border-gray-100 transition-all duration-500 overflow-hidden">
+    <div
+      className="relative w-full"
+      style={{ paddingTop: "56.25%" }}
+    >
+      <video
+        ref={(el) => (videoRefs.current[index] = el!)}
+        className="absolute top-0 left-0 w-full h-full rounded-xl"
+        src={video.url}
+        controls
+        muted
+        autoPlay
+        loop
+        playsInline
+      />
+    </div>
+  </div>
+</SwiperSlide>
+
           ))}
         </Swiper>
 
-        {/* 🌟 Dynamic Title + Content based on active slide */}
         <div className="mt-10 text-center text-gray-700 text-lg max-w-3xl mx-auto">
           <p className="font-semibold text-[#123751] text-xl">
             {videos[activeIndex].title}
@@ -101,7 +109,6 @@ const WhatsNew = () => {
           <p className="mt-2">{videos[activeIndex].content}</p>
         </div>
 
-        {/* 🌟 Controls (Now at bottom + working) */}
         <div className="flex items-center justify-center gap-8 mt-10">
           <button
             ref={prevRef}

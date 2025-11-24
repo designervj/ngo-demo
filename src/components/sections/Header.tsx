@@ -115,12 +115,19 @@ const Header = () => {
               />
               </Link>
 
+              <div className="md:hidden block">
+             <Link to="./"> <img
+                src="/assets/Image/gravis-logo.svg"
+                alt="logo"
+                className="h-16 w-auto"
+              />
+              </Link>
+            </div>
+
             
            
             </div>
-            <p className="md:hidden mt-1 text-[13px]  text-[#123751] font-medium">
-            Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL)
-            </p>
+          
           </div>
 
           {/* CENTER: Tagline + Nav (desktop only) */}
@@ -212,7 +219,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div>
+          <div className="md:block hidden">
              <Link to="./"> <img
                 src="/assets/Image/gravis-logo.svg"
                 alt="logo"
@@ -220,6 +227,18 @@ const Header = () => {
               />
               </Link>
             </div>
+
+            <div className="flex items-center gap-2 md:hidden">
+  <button
+    onClick={toggleMobileMenu}
+    className="flex items-center justify-center border border-gray-300 rounded-md p-2 bg-white/70"
+    aria-label="Toggle navigation menu"
+  >
+    {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+  </button>
+</div>
+
+
           {/* RIGHT: Socials + Mobile Menu Button */}
           {/* <div className="flex items-center gap-2">
             <div className="hidden md:flex items-center gap-1 text-[#008a2c]">
@@ -249,6 +268,10 @@ const Header = () => {
             </button>
           </div> */}
         </div>
+
+          <p className="md:hidden mt-2 text-[18px]  text-[#123751] font-medium" style={{color:"#123751"}}>
+            Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL) 
+            </p>
       </div>
 
       {/* --- MOBILE MENU --- */}
