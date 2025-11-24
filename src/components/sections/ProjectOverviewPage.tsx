@@ -29,7 +29,7 @@ const ProjectOverviewPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-green-800 mb-8 text-center">
+          className="text-3xl md:text-4xl font-bold text-[#008a2c] mb-8 text-center">
           Strengthening Agriculture-Based Livelihoods (SABL)
         </motion.h2> */}
 
@@ -50,36 +50,72 @@ const ProjectOverviewPage = () => {
 
         </motion.p>
 
-
-          <motion.p
+    <div className="mt-12">
+   
+          {/* <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="text-lg leading-relaxed text-gray-700 mb-6">
           Key activities include strengthening Community Based Organizations (CBOs), such as Self Help Groups (SHGs) and Intergenerational Learning groups (ILGs), and providing them with training in improved rainwater harvesting techniques, sustainable agriculture practices, and crop diversification. The project will implement 650 khadins (rainwater harvesting structures) across 2,600 hectares of land to boost crop production by 50-100%. Additionally, 586 Arid Horticultural Units (AHUs) and 20 silvipasture units will be developed to enhance food and fodder security for approximately 20,000 people and 80,000 cattle.
-        </motion.p>
+        </motion.p> */}
 
 
-          <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-lg leading-relaxed text-gray-700 mb-6">
-        A crucial component involves equipping 2,400 women and youth with financial and digital skills, facilitating their access to capital and markets, and providing income generating support to 100 trained women and youth  for establishing food processing units. The project additionally prioritizes capturing lessons learned and promoting its objectives through various documentation and advocacy initiatives. These efforts aim to inform policy-making and encourage the widespread adoption of effective ABL practices.
+               <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
+                  <motion.img
+                    src="./assets/Image/project-overview.jpg"
+                    alt="Community Empowerment"
+                    className="rounded-2xl shadow-lg w-full object-cover"
+                  />
+                  <motion.div>
+                  
+                    <p className="text-lg text-justify">
+                      Key activities include strengthening Community Based Organizations (CBOs), such as Self Help Groups (SHGs) and Intergenerational Learning groups (ILGs), and providing them with training in improved rainwater harvesting techniques, sustainable agriculture practices, and crop diversification. The project will implement 650 khadins (rainwater harvesting structures) across 2,600 hectares of land to boost crop production by 50-100%. Additionally, 586 Arid Horticultural Units (AHUs) and 20 silvipasture units will be developed to enhance food and fodder security for approximately 20,000 people and 80,000 cattle.
 
-        </motion.p>
+                    </p>
+                  </motion.div>
+                </div>
 
-              <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-lg leading-relaxed text-gray-700 mb-6">
-        GRAVIS will collaborate with local authorities, the private sector, and research organizations to ensure sustainability and maximize impact. The project's approach integrates cross-cutting issues such as gender equality, environmental conservation, and good governance, aligning with the EU's development goals and India's national programmes for rural livelihoods and climate change adaptation. The ultimate goal is to create a replicable model for sustainable economic empowerment in arid zones, fostering resilient and equitable communities.
-        </motion.p>
 
-      <div>
+      
+
+           <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
+                  <motion.div>
+                    
+                    <p className="text-lg text-justify">
+                     A crucial component involves equipping 2,400 women and youth with financial and digital skills, facilitating their access to capital and markets, and providing income generating support to 100 trained women and youth  for establishing food processing units. The project additionally prioritizes capturing lessons learned and promoting its objectives through various documentation and advocacy initiatives. These efforts aim to inform policy-making and encourage the widespread adoption of effective ABL practices.
+                    </p>
+                  </motion.div>
+                  <motion.img
+                    src="./assets/Image/project-overview.jpg"
+                    alt="Integrated Livelihood"
+                    className="rounded-2xl shadow-lg w-full object-cover"
+                  />
+                </div>
+
+ 
+
+           <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
+                  <motion.img
+                    src="./assets/Image/project-overview.jpg"
+                    alt="Community Empowerment"
+                    className="rounded-2xl shadow-lg w-full object-cover"
+                  />
+                  <motion.div>
+                  
+                    <p className="text-lg text-justify">
+                          GRAVIS will collaborate with local authorities, the private sector, and research organizations to ensure sustainability and maximize impact. The project's approach integrates cross-cutting issues such as gender equality, environmental conservation, and good governance, aligning with the EU's development goals and India's national programmes for rural livelihoods and climate change adaptation. The ultimate goal is to create a replicable model for sustainable economic empowerment in arid zones, fostering resilient and equitable communities.
+
+
+                    </p>
+                  </motion.div>
+                </div>
+
+        
+</div>
+      {/* <div>
         <img src="./assets/Image/project-overview.jpg" alt="Project OverView Image" ></img>
-      </div>
+      </div> */}
 
       </section>
 

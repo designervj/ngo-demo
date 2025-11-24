@@ -17,7 +17,7 @@ export default function AboutApproach() {
         "Stakeholder cooperation",
       ],
       // Placeholder image URL - REPLACE WITH YOUR ACTUAL IMAGE URLs
-      image: "./assets/Image/slider-img1.png", 
+      image: "./assets/Image/our-apporch-img.jpg", 
       link: "#our-approach-section", // Placeholder link
     },
     {
@@ -98,7 +98,7 @@ export default function AboutApproach() {
                 <div className="flex justify-end mt-6">
                   <a
                     href={section.link} // Changed button to 'a' tag for linking purposes
-                    className="group inline-flex items-center gap-2 text-white font-medium px-0 py-2.5 transition-all duration-300 border-b-2 border-white hover:border-[#6BA539] hover:text-[#6BA539]"
+                    className="group inline-flex items-center gap-2 text-white font-medium px-0 py-2.5 transition-all duration-300 border-b-2 border-white hover:border-[#008a2c] hover:text-[#008a2c]"
                   >
                     <span>Read More</span>
                     <svg

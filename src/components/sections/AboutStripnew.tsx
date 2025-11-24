@@ -7,7 +7,7 @@ export default function AboutApproach() {
   const sections = [
     {
       id: 1,
-      icon: <Lightbulb className="w-10 h-10 text-[#6BA539]" />,
+      icon: <Lightbulb className="w-10 h-10 text-[#008a2c]" />,
       title: "Our Approach",
       points: [
         "Capacity Building",
@@ -17,7 +17,7 @@ export default function AboutApproach() {
         "Stakeholder cooperation",
       ],
       bg: "bg-[#f8fbf5]",
-      border: "border-[#6BA539]",
+      border: "border-[#008a2c]",
     },
     {
       id: 2,
@@ -78,14 +78,14 @@ export default function AboutApproach() {
             <ul className="space-y-2 text-gray-700">
               {section.points.map((point, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-[#6BA539] mt-1.5">•</span>
+                  <span className="text-[#008a2c] mt-1.5">•</span>
                   <span>{point}</span>
                 </li>
               ))}
             </ul>
         <div className="flex justify-end mt-6">
   <button
-    className="group inline-flex items-center gap-2 bg-transprent hover:bg-transprent  text-[#6BA539] font-medium px-0 py-2.5  transition-all duration-300 "
+    className="group inline-flex items-center gap-2 bg-transprent hover:bg-transprent  text-[#008a2c] font-medium px-0 py-2.5  transition-all duration-300 "
   >
     <span>Read More</span>
     <svg

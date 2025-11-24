@@ -80,7 +80,7 @@ const Header = () => {
             "Formation of CBOs & Capacity Building",
             "Rainwater Harvesting & Dryland Farming",
             "Horticulture & Animal Husbandry",
-            "Skill Development & Entrepreneurship and",
+            "Skill Development & Entrepreneurship",
             "Documentation & Advocacy",
           ],
         },
@@ -106,37 +106,32 @@ const Header = () => {
         <div className="flex items-center justify-between gap-4">
           {/* LEFT: Logo */}
           <div className="flex flex-col">
-            <div className="text-[#6BA642] flex gap-4 font-extrabold text-3xl md:text-5xl tracking-tight leading-none">
-             <Link to="./"> <img
-                src="/assets/Image/gravis-logo.svg"
-                alt="logo"
-                className="h-16 w-auto"
-              />
-              </Link>
-              <Link to="./">
+            <div className="text-[#008a2c] flex gap-4 font-extrabold text-3xl md:text-5xl tracking-tight leading-none">
+                 <Link to="./">
               <img
                 src="/assets/Image/eu-logo.jpg"
                 alt="logo"
                 className="h-16 w-auto"
               />
               </Link>
+
+            
+           
             </div>
-            <p className="md:hidden mt-1 text-[13px]  text-[#6c4c35] font-medium">
-              Strengthening Agriculture-Based Livelihoods (SABL) In The Thar
-              Desert
+            <p className="md:hidden mt-1 text-[13px]  text-[#123751] font-medium">
+            Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL)
             </p>
           </div>
 
           {/* CENTER: Tagline + Nav (desktop only) */}
           <div className="hidden md:flex flex-col items-center">
-            <p className=" text-[#6c4c35] text-[18px] font-semibold mb-2 text-center">
-              Strengthening Agriculture-Based Livelihoods (SABL) In The Thar
-              Desert
+            <p className=" text-[#123751] text-[20px] font-semibold mb-2 text-center">
+            Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL)
             </p>
 
             {/* --- DESKTOP NAV --- */}
             <nav className="flex items-center gap-6 text-[15px] font-medium text-gray-800 relative">
-              <a href="/" className="hover:text-[#6BA642] transition">
+              <a href="/" className="hover:text-[#008a2c] transition">
                 Home
               </a>
               {menuItems.map((menu) => (
@@ -146,7 +141,7 @@ const Header = () => {
                   onMouseEnter={() => setOpenDropdown(menu.name)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <button className="flex items-center gap-1 hover:text-[#6BA642]">
+                  <button className="flex items-center gap-1 hover:text-[#008a2c]">
                     {menu.name} <ChevronDown className="w-4 h-4" />
                   </button>
                   <div
@@ -208,19 +203,27 @@ const Header = () => {
                   </div>
                 </div>
               ))}
-              {/* <a href="/photo-gallery" className="hover:text-[#6BA642] transition">
+              {/* <a href="/photo-gallery" className="hover:text-[#008a2c] transition">
                 Photo Gallery
               </a> */}
-              <a href="/get-involved" className="hover:text-[#6BA642] transition">
+              <a href="/get-involved" className="hover:text-[#008a2c] transition">
                 Get Involved
               </a>
             </nav>
           </div>
 
+          <div>
+             <Link to="./"> <img
+                src="/assets/Image/gravis-logo.svg"
+                alt="logo"
+                className="h-16 w-auto"
+              />
+              </Link>
+            </div>
           {/* RIGHT: Socials + Mobile Menu Button */}
-          <div className="flex items-center gap-2">
-            <div className="hidden md:flex items-center gap-1 text-[#6BA642]">
-              {/* ... social icons ... */}
+          {/* <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-1 text-[#008a2c]">
+   
               <a href="#" className="hover:bg-white p-2 rounded-full transition-all duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -244,7 +247,7 @@ const Header = () => {
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -257,7 +260,7 @@ const Header = () => {
         }`}
       >
         <nav className="space-y-3">
-          <a href="/" className="block py-1 hover:text-[#6BA642]">
+          <a href="/" className="block py-1 hover:text-[#008a2c]">
             Home
           </a>
 
@@ -268,7 +271,7 @@ const Header = () => {
             >
               <button
                 onClick={() => toggleDropdown(menu.name)}
-                className="flex items-center justify-between w-full hover:text-[#6BA642]"
+                className="flex items-center justify-between w-full hover:text-[#008a2c]"
               >
                 <span>{menu.name}</span>
                 <ChevronDown
@@ -347,13 +350,13 @@ const Header = () => {
           <div className=" pt-1">
             <a
               href="/photo-gallery"
-              className="block py-3 border-t border-gray-100 hover:text-[#6BA642]"
+              className="block py-3 border-t border-gray-100 hover:text-[#008a2c]"
             >
               Photo Gallery
             </a>
             <a
               href="/get-involved"
-              className="block py-1 pt-3 hover:text-[#6BA642] border-t border-gray-100"
+              className="block py-1 pt-3 hover:text-[#008a2c] border-t border-gray-100"
             >
               Get Involved
             </a>
@@ -361,7 +364,7 @@ const Header = () => {
         </nav>
 
         {/* Socials for Mobile */}
-        <div className="flex items-center gap-4 mt-2 pt-3 border-t border-gray-100 text-[#6BA642]">
+        <div className="flex items-center gap-4 mt-2 pt-3 border-t border-gray-100 text-[#008a2c]">
           <Facebook className="w-5 h-5" />
           <Twitter className="w-5 h-5" />
           <Instagram className="w-5 h-5" />

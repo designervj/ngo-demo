@@ -30,12 +30,14 @@ const OverViewPage = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold  leading-tight drop-shadow-lg tracking-wide">
             Overview
           </h1>
-          <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">
-           
+         <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">
+            GRAVIS empowers rural India through innovation, inclusion, and Gandhian
+            values — transforming communities with compassion and collaboration.
           </p>
+
         </motion.div>
 
         {/* Decorative Bottom Wave */}
@@ -55,7 +57,7 @@ const OverViewPage = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-semibold text-green-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-6">
               Building a Resilient and Self-Reliant Future
             </h2>
 
@@ -92,11 +94,17 @@ const OverViewPage = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className=" overflow-hidden  gap-2 flex flex-wrap">
               <img
-                src="/assets/Image/img (6).jpg"
+                src="assets/Image/image1.png"
                 alt="GRAVIS team"
-                className="object-cover w-full h-[400px]"
+                className="object-cover w-full rounded-2xl"
+              />
+
+                 <img
+                src="assets/Image/image2.png"
+                alt="GRAVIS team"
+                className="object-cover w-full  rounded-2xl"
               />
             </div>
 
@@ -124,11 +132,29 @@ const OverViewPage = () => {
             India and beyond.
           </p>
         </motion.div> */}
-        <div className="flex gap-2 justify-center mt-6 mx-auto max-w-6xl">
+        {/* <div className="flex gap-2 justify-center mt-6 mx-auto max-w-6xl">
           <img src="assets/Image/image1.png" alt="OverView Image" className="w-1/2 rounded-md"></img>
           <img src="assets/Image/image2.png" alt="Overview Image" className="w-1/2 rounded-md"></img>
 
-        </div>
+        </div> */}
+
+
+          <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-20 max-w-6xl mx-auto bg-white shadow-md rounded-2xl p-8 text-center border border-green-100"
+        >
+       
+          <p className="text-gray-700 text-xl leading-relaxed md:px-12 px-6 py-4">
+          GRAVIS systematically documents its learning and experiences through robust research 
+          and advocacy, including surveys, best practices compilation, and evidence-based studies,
+           to maximize impact and promote replication.
+
+          </p>
+        </motion.div>
+
       </section>
     </div>
   );

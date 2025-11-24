@@ -60,19 +60,24 @@ const GuidingPrinciplesPage = () => {
                           </div>
                   
                           {/* Foreground Content */}
-                          <motion.div
-                            initial={{ opacity: 0, y: 40 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                            className="relative z-10 text-center text-white px-6"
-                          >
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-                              Guiding Principles
-      
-            
-                            </h1>
-                            
-                          </motion.div>
+                       <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className="relative z-10 text-white px-6 text-center"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold leading-tight tracking-tight drop-shadow-lg">
+            Guiding Principles
+          </h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
+          >
+            GRAVIS’s approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment.
+          </motion.p>
+        </motion.div>
                   
                           {/* Decorative Bottom Wave */}
                         
@@ -86,7 +91,7 @@ const GuidingPrinciplesPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-semibold text-green-800 mb-14"
+            className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-14"
           >
             Our Core Principles
           </motion.h2>
@@ -102,7 +107,7 @@ const GuidingPrinciplesPage = () => {
                 className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300"
               >
                 <div className="flex justify-center">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-green-800 mb-3 mt-2">
+                <h3 className="text-xl font-semibold text-[#008a2c] mb-3 mt-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 text-base leading-relaxed">

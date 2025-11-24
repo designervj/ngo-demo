@@ -59,7 +59,7 @@ const WhatsNew = () => {
 
       <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
         {/* Section Header */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#6c4c35] mb-5">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#123751] mb-5">
           What's New
         </h2>
 
@@ -70,7 +70,7 @@ const WhatsNew = () => {
           slidesPerView={1}
           onSwiper={(swiper) => setSwiperInstance(swiper)}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          className="relative mt-8"
+          className="relative mt-16"
         >
           {videos.map((video) => (
             <SwiperSlide key={video.id}>
@@ -95,7 +95,7 @@ const WhatsNew = () => {
 
         {/* 🌟 Dynamic Title + Content based on active slide */}
         <div className="mt-10 text-center text-gray-700 text-lg max-w-3xl mx-auto">
-          <p className="font-semibold text-[#6c4c35] text-xl">
+          <p className="font-semibold text-[#123751] text-xl">
             {videos[activeIndex].title}
           </p>
           <p className="mt-2">{videos[activeIndex].content}</p>
@@ -105,7 +105,7 @@ const WhatsNew = () => {
         <div className="flex items-center justify-center gap-8 mt-10">
           <button
             ref={prevRef}
-            className="bg-[#8bb66c] hover:bg-[#69a242] transition-all duration-300 w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            className="bg-[#008a2c] hover:bg-[#008a2ceb] transition-all duration-300 w-10 h-10 flex items-center justify-center rounded-full shadow-md"
           >
             <FaArrowLeft className="text-white" />
           </button>
@@ -116,7 +116,7 @@ const WhatsNew = () => {
 
           <button
             ref={nextRef}
-            className="bg-[#8bb66c] hover:bg-[#69a242] transition-all duration-300 w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            className="bg-[#008a2c] hover:bg-[#008a2ceb] transition-all duration-300 w-10 h-10 flex items-center justify-center rounded-full shadow-md"
           >
             <FaArrowRight className="text-white" />
           </button>

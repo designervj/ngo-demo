@@ -20,6 +20,9 @@ const ObjectivesPage = () => {
         </div>
       </div>
 
+
+
+
       {/* ---------- Content Section ---------- */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <motion.p
@@ -34,6 +37,14 @@ const ObjectivesPage = () => {
           livelihoods (ABL), which in turn leads to enhanced economic well-being
           through gender equality and the empowerment of youth.
         </motion.p>
+
+
+          <div className="my-10">
+          <img
+            src="./assets/Image/object-img 1.png"
+            alt="Project OverView Image"
+            className="rounded-md shadow-lg"></img>
+        </div>
 
         {/* Objectives List */}
         <div className="space-y-8">
@@ -71,7 +82,7 @@ const ObjectivesPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-2xl font-semibold text-green-800 mb-3">
+              <h3 className="text-2xl font-semibold text-[#008a2c] mb-3">
                 {obj.title}
               </h3>
               <p className="text-gray-700 leading-relaxed">{obj.desc}</p>
@@ -90,12 +101,7 @@ const ObjectivesPage = () => {
           and beyond.
         </motion.p>
 
-        <div className="mt-10">
-          <img
-            src="./assets/Image/object-img 1.png"
-            alt="Project OverView Image"
-            className="rounded-md"></img>
-        </div>
+      
       </section>
     </div>
   );

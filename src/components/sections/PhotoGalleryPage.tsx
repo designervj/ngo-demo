@@ -100,7 +100,7 @@ const PhotoGalleryPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-10"
+          className="text-3xl md:text-4xl font-bold text-[#008a2c] text-center mb-10"
         >
           Our Gallery
         </motion.h2>

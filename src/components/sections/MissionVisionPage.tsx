@@ -6,65 +6,95 @@ const MissionVisionPage = () => {
   return (
     <div className="w-full">
       {/* 🌿 Hero Section (Same as Overview / What We Do) */}
-    
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
+        {/* Gradient + Pattern Background */}
+        <div className="absolute inset-0 bg-[#123751]">
+          {/* Decorative Texture */}
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage:
+                "url('https://www.transparenttextures.com/patterns/cubes.png')",
+            }}></div>
 
-       <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
-                    {/* Gradient + Pattern Background */}
-                    <div className="absolute inset-0 bg-[#123751]">
-                      {/* Decorative Texture */}
-                      <div
-                        className="absolute inset-0 opacity-[0.08]"
-                        style={{
-                          backgroundImage:
-                            "url('https://www.transparenttextures.com/patterns/cubes.png')",
-                        }}
-                      ></div>
-            
-                      {/* Floating light effect */}
-                      {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
-                    </div>
-            
-                    {/* Foreground Content */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 40 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1 }}
-                      className="relative z-10 text-center text-white px-6"
-                    >
-                      <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-                        Mission & Vision
+          {/* Floating light effect */}
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
+        </div>
 
-      
-                      </h1>
-                      
-                    </motion.div>
-            
-                    {/* Decorative Bottom Wave */}
-                  
-                  </div>
+        {/* Foreground Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative z-10 text-center text-white px-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            Mission & Vision
+          </h1>
+        </motion.div>
 
+        {/* Decorative Bottom Wave */}
+      </div>
 
+      {/* 📸 Mission Section */}
+      <section className="bg-[#F7F8F6] py-20 px-6 md:px-20 text-gray-800">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          {/* Left: Image */}
+         
 
-     
-
-
-      {/* 🌱 Vision Section (Alternate layout) */}
-      <section className="bg-[#F7F8F6] py-20 px-6 md:px-20 text-gray-800 ">
-      <div className="max-w-6xl mx-auto">
-
-          <p className="text-lg leading-relaxed text-gray-700">
-              GRAVIS is guided by two foundational Gandhian principles: Sarvodaya, meaning "all rising, but the last person first," which emphasizes a bottom-up approach for inclusive socio-economic progress. We champion the collective advancement of all individuals, irrespective of their economic status, age, caste, or religion.
+          {/* Right: Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}>
+            <p className="text-lg leading-relaxed text-gray-700">
+              GRAVIS is guided by two foundational Gandhian principles:
+              Sarvodaya, meaning "all rising, but the last person first," which
+              emphasizes a bottom-up approach for inclusive socio-economic
+              progress. We champion the collective advancement of all
+              individuals, irrespective of their economic status, age, caste, or
+              religion.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700">To achieve this, GRAVIS embraces Gram Swaraj, or village self-rule. This philosophy promotes independent, self-sufficient villages. Our interventions are therefore planned and executed with extensive community involvement, ensuring local ownership, maintenance, and monitoring. Strong community-based organizations (CBOs) are central to GRAVIS' work, actively engaging members in projects to foster self-empowerment rather than merely supplementing failing systems.</p>
+
+             <p className="text-lg leading-relaxed text-gray-700 pt-4">
+              To achieve this, GRAVIS embraces Gram Swaraj, or village
+              self-rule. This philosophy promotes independent, self-sufficient
+              villages. Our interventions are therefore planned and executed
+              with extensive community involvement, ensuring local ownership,
+              maintenance, and monitoring. Strong community-based organizations
+              (CBOs) are central to GRAVIS' work, actively engaging members in
+              projects to foster self-empowerment rather than merely
+              supplementing failing systems.
+            </p>
+
+          </motion.div>
+
+           <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="/assets/Image/image (10).png"
+              alt="Mission Image"
+              className="w-full h-[400px] object-cover"
+            />
+          </motion.div>
+
+        </div>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center mt-10">
+
+           <img
+              src="/assets/Image/img (6).jpg"
+              alt="Vision Image"
+              className="w-full h-[550px] object-cover rounded-2xl"
+            />
+ </div>
+      </section>
 
    
-      {/* <div className="flex gap-2 justify-center mt-6 ">
-          <img src="assets/Image/history-img.png" alt="OverView Image" className="w-1/2 rounded-md"></img>
-          <img src="assets/Image/history-img1.png" alt="Overview Image" className="w-1/2 rounded-md"></img>
-
-        </div> */}
-</div>
-      </section>
     </div>
   );
 };
