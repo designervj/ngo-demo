@@ -32,15 +32,14 @@ const HistoryPage = () => {
             History
           </h1>
 
-           <motion.p
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1, delay: 0.3 }}
-                      className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
-                    >
-                      Tracing GRAVIS’ journey — from a small movement in the Thar Desert
-                      to a model of rural transformation across India.
-                    </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
+            Tracing GRAVIS’ journey — from a small movement in the Thar Desert
+            to a model of rural transformation across India.
+          </motion.p>
         </motion.div>
 
         {/* Decorative Bottom Wave */}
@@ -66,47 +65,48 @@ const HistoryPage = () => {
             productivity, contributing to widespread malnutrition and health
             crises among its remote, yet densely populated, communities.
           </p>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9 }}
-              viewport={{ once: true }}
-              className="max-w-6xl mx-auto">
-              <p className="text-lg leading-relaxed text-gray-700">
-                From its humble beginnings in <strong>20 villages</strong>,
-                GRAVIS has expanded its reach to over{" "}
-                <strong>2000 communities</strong>, positively impacting over{" "}
-                <strong>2 million individuals</strong> and facilitating the
-                creation of <strong> 4000 Community-based Organizations</strong>
-                . Recognizing the persistent vulnerabilities faced by women,
-                children, and the elderly due to water and food insecurity,
-                GRAVIS adopted a holistic,integrated development strategy. This
-                approach extends to regions in Uttarakhand, addressing
-                challenges posed by floods and dry periods in its mountainous
-                terrain, and to the drought -afflicted Bundelkhand region of
-                Uttar Pradesh, with a strong focus on farmer empowerment,
-                women's upliftment, and community health initiatives. Beyond
-                providing disaster relief and fostering global knowledge
-                exchange, GRAVIS is committed to sustainable development. The
-                organization strives to ensure reliable access to safe drinking
-                and irrigation water, while simultaneously transforming lives
-                through comprehensive programmes in education, healthcare,
-                microfinance, and dedicated advocacy for the rights of society's
-                most vulnerable members.
-              </p>
-            </motion.div>
 
-            <div className="flex flex-wrap gap-2 justify-center mt-0 mx-auto ">
-              <img
-                src="assets/Image/history-img.png"
-                alt="OverView Image"
-                className=" rounded-md"></img>
-              <img
-                src="assets/Image/history-img1.png"
-                alt="Overview Image"
-                className=" rounded-md"></img>
-            </div>
+          <div>
+            <img
+              src="assets/Image/history-img.png"
+              alt="OverView Image"
+              className=" rounded-md w-full"></img>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto my-9">
+            <p className="text-lg leading-relaxed text-gray-700">
+              From its humble beginnings in <strong>20 villages</strong>, GRAVIS
+              has expanded its reach to over <strong>2000 communities</strong>,
+              positively impacting over <strong>2 million individuals</strong>{" "}
+              and facilitating the creation of{" "}
+              <strong> 4000 Community-based Organizations</strong>. Recognizing
+              the persistent vulnerabilities faced by women, children, and the
+              elderly due to water and food insecurity, GRAVIS adopted a
+              holistic,integrated development strategy. This approach extends to
+              regions in Uttarakhand, addressing challenges posed by floods and
+              dry periods in its mountainous terrain, and to the drought
+              -afflicted Bundelkhand region of Uttar Pradesh, with a strong
+              focus on farmer empowerment, women's upliftment, and community
+              health initiatives. Beyond providing disaster relief and fostering
+              global knowledge exchange, GRAVIS is committed to sustainable
+              development. The organization strives to ensure reliable access to
+              safe drinking and irrigation water, while simultaneously
+              transforming lives through comprehensive programmes in education,
+              healthcare, microfinance, and dedicated advocacy for the rights of
+              society's most vulnerable members.
+            </p>
+          </motion.div>
+
+          <div className="flex flex-wrap gap-2 justify-center mt-0 mx-auto ">
+            <img
+              src="assets/Image/history-img1.png"
+              alt="Overview Image"
+              className="rounded-md w-full"></img>
           </div>
         </div>
       </section>
