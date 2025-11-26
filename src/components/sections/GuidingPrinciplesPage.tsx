@@ -66,7 +66,7 @@ const GuidingPrinciplesPage = () => {
           transition={{ duration: 0.9 }}
           className="relative z-10 text-white px-6 text-center"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-extrabold leading-tight tracking-tight drop-shadow-lg">
             Guiding Principles
           </h1>
           <motion.p

@@ -8,7 +8,7 @@ export default function AboutApproach() {
     {
       id: 1,
       icon: <Lightbulb className="w-10 h-10 text-[#008a2c]" />,
-      title: "Our Approach",
+      title: "Our Approach ",
       points: [
         "Capacity Building",
         "Blending traditional wisdom with new technology",

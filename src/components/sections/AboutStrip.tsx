@@ -18,7 +18,7 @@ export default function AboutApproach() {
       ],
       // Placeholder image URL - REPLACE WITH YOUR ACTUAL IMAGE URLs
       image: "./assets/Image/our-apporch-img.jpg", 
-      link: "#our-approach-section", // Placeholder link
+      link: "/approach", // Placeholder link
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function AboutApproach() {
       // Placeholder image URL - REPLACE WITH YOUR ACTUAL IMAGE URLs
           image: "./assets/Image/slider-img2.png", 
 
-      link: "#key-interventions-section", // Placeholder link
+      link: "/project-overview", // Placeholder link
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ export default function AboutApproach() {
       ],
       // Placeholder image URL - REPLACE WITH YOUR ACTUAL IMAGE URLs
       image: "./assets/Image/slider-img3.png", 
-      link: "#expected-outcomes-section", // Placeholder link
+      link: "/impact", // Placeholder link
     },
   ];
 

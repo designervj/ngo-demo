@@ -30,7 +30,7 @@ const OverViewPage = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold  leading-tight drop-shadow-lg tracking-wide">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  leading-tight drop-shadow-lg tracking-wide">
             Overview
           </h1>
          <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">

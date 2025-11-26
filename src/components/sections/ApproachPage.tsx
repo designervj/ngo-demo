@@ -31,7 +31,7 @@ const ApproachPage = () => {
         {/* ---------- Section 1 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.img
-            src="/assets/Image/image (6).png"
+            src="/assets/Image/apporch-img3.JPG"
             alt="Community Empowerment"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -67,7 +67,7 @@ const ApproachPage = () => {
             </p>
           </motion.div>
           <motion.img
-            src="/assets/Image/image (8).png"
+            src="/assets/Image/apporch-img5.jpg"
             alt="Integrated Livelihood"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -76,7 +76,7 @@ const ApproachPage = () => {
         {/* ---------- Section 3 (Capacity Building) ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.img
-            src="/assets/Image/image (9).png"
+            src="/assets/Image/apporch-img2.jpeg"
             alt="Capacity Building"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -125,7 +125,7 @@ const ApproachPage = () => {
             </p>
           </motion.div>
           <motion.img
-            src="/assets/Image/image (10).png"
+            src="/assets/Image/apporch-img4.jpg"
             alt="Market Linkages"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -166,7 +166,7 @@ const ApproachPage = () => {
             </p>
           </motion.div>
           <motion.img
-            src="/assets/Image/image (12).png"
+            src="/assets/Image/apporch-img1.JPG"
             alt="Advocacy"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -175,7 +175,7 @@ const ApproachPage = () => {
         {/* ---------- Section 7 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.img
-            src="/assets/Image/image (13).png"
+            src="/assets/Image/apporch-img6.JPG"
             alt="Partnerships"
             className="rounded-2xl shadow-lg w-full object-cover"
           />

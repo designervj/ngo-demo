@@ -41,9 +41,9 @@ const ObjectivesPage = () => {
 
           <div className="my-10">
           <img
-            src="./assets/Image/object-img 1.png"
+            src="./assets/Image/object-imges1.jpg"
             alt="Project OverView Image"
-            className="rounded-md shadow-lg"></img>
+            className="rounded-md shadow-lg "></img>
         </div>
 
         {/* Objectives List */}

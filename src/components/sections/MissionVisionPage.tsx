@@ -37,9 +37,20 @@ const MissionVisionPage = () => {
 
       {/* 📸 Mission Section */}
       <section className="bg-[#F7F8F6] py-20 px-6 md:px-20 text-gray-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center">
           {/* Left: Image */}
-         
+           <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden ">
+            <img
+              src="/assets/Image/image (10).png"
+              alt="Mission Image"
+              className="w-full h-[600px] object-cover"
+            />
+          </motion.div>
 
           {/* Right: Text */}
           <motion.div
@@ -69,18 +80,7 @@ const MissionVisionPage = () => {
 
           </motion.div>
 
-           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="/assets/Image/image (10).png"
-              alt="Mission Image"
-              className="w-full h-[400px] object-cover"
-            />
-          </motion.div>
+         
 
         </div>
 

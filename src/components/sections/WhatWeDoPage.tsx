@@ -81,7 +81,7 @@ export default function WhatWeDoPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative pb-10 z-10 flex flex-col items-center justify-center text-center text-white px-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
             What We Do
           </h1>
           <motion.p
@@ -135,7 +135,7 @@ export default function WhatWeDoPage() {
           <div className="w-full md:w-1/2 space-y-4">
             <div className="flex items-center gap-4">
               {sec.icon}
-              <h2 className="text-3xl font-semibold text-gray-800">
+              <h2 className="text-3xl font-semibold text-[#008a2c]">
                 {sec.title}
               </h2>
             </div>

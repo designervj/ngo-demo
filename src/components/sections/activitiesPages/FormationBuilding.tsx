@@ -89,7 +89,7 @@ const FormationBuilding = () => {
           viewport={{ once: true }}
           className="mt-14 grid md:grid-cols-2 gap-10 items-center">
           <img
-            src="/assets/Image/img (6).jpg"
+            src="/assets/Image/Image-1.jpg"
             alt="CBO Training"
             className="rounded-2xl shadow-lg object-cover w-full"
           />
@@ -131,7 +131,7 @@ const FormationBuilding = () => {
             </p>
           </div>
           <img
-            src="/assets/Image/image (11).png"
+            src="/assets/Image/Image-2.jpeg"
             alt="Staff Training"
             className="rounded-2xl shadow-lg object-cover w-full"
           />
@@ -146,7 +146,7 @@ const FormationBuilding = () => {
           viewport={{ once: true }}
           className="mt-20 grid md:grid-cols-2 gap-10 items-center">
           <img
-            src="/assets/Image/img (1).JPG"
+            src="/assets/Image/Image-3.jpg"
             alt="CBO Evaluation"
             className="rounded-2xl shadow-lg object-cover w-full"
           />

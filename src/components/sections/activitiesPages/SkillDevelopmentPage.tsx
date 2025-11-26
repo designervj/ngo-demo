@@ -19,7 +19,7 @@ const SkillDevelopmentPage = () => {
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-              Documentation and Advocacy
+             Skill Development and Entrepreneurship
             </h1>
 
             <motion.p
@@ -35,7 +35,7 @@ const SkillDevelopmentPage = () => {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 py-10 mb-12 leading-relaxed">
-        {/* ---------- Image Section ---------- */}
+        {/* ---------- Image + Paragraph 1 ---------- */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -44,29 +44,29 @@ const SkillDevelopmentPage = () => {
           viewport={{ once: true }}
           className="mt-14 grid md:grid-cols-2 gap-10 items-center">
           <img
-            src="./assets/Image/Documentation-image1.png"
-            alt="CBO Training"
+            src="./assets/Image/First-Image.jpg"
+            alt="Documentation and Advocacy Workshop"
             className="rounded-2xl shadow-lg object-cover w-full"
           />
           <div>
-            <p className="text-gray-700 mb-3 text-lg ">
-              Documentation and advocacy form a critical output of the project,
-              designed to influence policies and promote the replication of
-              successful Agriculture-Based Livelihoods (ABL) practices by local
-              Civil Society Organizations (CSOs) and government agencies, both
-              within India and beyond. Over the project's duration, two
-              comprehensive learning documents will be compiled. These documents
-              will focus on the pivotal role of women and youth in strengthening
-              ABL and on effective livelihood development strategies within arid
-              zones. These publications will synthesize project experiences,
-              findings, and best practices, and will be widely disseminated both
-              online and in print to facilitate knowledge sharing and exchange
-              among various stakeholders.
+            <p className="text-gray-700 mb-3 text-lg text-justify">
+              The project is designed to foster enterprise development,
+              particularly among women and youth from Community-Based
+              Organizations (CBOs), by equipping 2,400 individuals with
+              essential financial and digital skills. This comprehensive support
+              aims to provide them with the knowledge and networks necessary to
+              access capital, establish marketing linkages, and ultimately
+              generate income through entrepreneurial ventures. A key focus is
+              on setting up small-scale food processing units, utilizing local
+              produce from agriculture, horticulture, or livestock. These units
+              will transform raw agricultural products such as spices, pickles,
+              and milk into value-added goods to be sold in local markets,
+              thereby strengthening the rural economy.
             </p>
           </div>
         </motion.div>
 
-        {/* ---------- Staff Training ---------- */}
+        {/* ---------- Image + Paragraph 2 ---------- */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -75,56 +75,35 @@ const SkillDevelopmentPage = () => {
           viewport={{ once: true }}
           className="mt-20 grid md:grid-cols-2 gap-10 items-center mb-10">
           <div>
-            <p className="text-gray-700 text-lg ">
-              In addition to these learning documents, three advocacy briefs
-              will be developed. These briefs will address key themes: gender
-              aspects in dryland/rain-fed farming, the participation of youth in
-              ABL and the significance of intergenerational exchanges, and the
-              crucial alignment between agriculture, horticulture, and animal
-              husbandry within ABL. Each brief will include policy
-              recommendations and advocacy messages aimed at influencing rural
-              livelihood programs and policies, with a strong emphasis on
-              promoting ABL through women and youth leadership. To further
-              amplify these messages and foster participatory dialogue,
-              community-level advocacy events will be organized at the district
-              level. These events will bring together representatives from local
-              communities, GRAVIS, other CSOs, local authorities, research
-              organizations, and the private sector.
+            <p className="text-gray-700 text-lg text-justify">
+              To facilitate this, 160 CBOs will receive development support in
+              the form of supplies and furnishings (e.g., carpets, tables,
+              chairs, file cabinets, solar lights) to aid their functioning and
+              record-keeping, with each group developing an action plan approved
+              by Community Project Monitoring Committees (CPMC). Furthermore,
+              income-generating support, including materials and supplies, will
+              be provided to 100 trained women and youth who are identified
+              based on predefined shortlisting criteria. These beneficiaries
+              will develop clear action plans for their food processing units,
+              which will be evaluated and approved by CPMC members. Technical
+              trainings will be provided on digital literacy, financial aspects
+              (including phone banking, loan access, and e-commerce), and
+              marketing linkages, empowering CBO members to understand market
+              dynamics and create effective sales channels. A marketing
+              consultant will offer additional support to beneficiaries to
+              enhance market access. Moreover, a dedicated Training Centre to
+              strengthen rural Livelihoods (TCL) will be established, serving as
+              a long-term asset for continuous training and capacity building as
+              well as research for local women, youth, and CSOs over the
+              project's duration.
             </p>
           </div>
           <img
-            src="./assets/Image/Documentation-image1.png"
-            alt="Staff Training"
+            src="./assets/Image/Second-Image.jpeg"
+            alt="Field Visit and Advocacy Event"
             className="rounded-2xl shadow-lg object-cover w-full"
           />
         </motion.div>
-
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="mt-14 grid md:grid-cols-2 gap-10 items-center">
-          <img
-            src="./assets/Image/Documentation-image1.png"
-            alt="CBO Training"
-            className="rounded-2xl shadow-lg object-cover w-full"
-          />
-          <div>
-            <p className="text-gray-700 mb-3 text-lg ">
-              Furthermore, State and national-level advocacy events are planned
-              for the final year of the project, targeting a broader audience of
-              stakeholders, including government authorities and the EU
-              Delegation, to discuss policy and practical advancements in ABL
-              through women and youth empowerment. The project aims to document
-              robust data and evidence to support these advocacy efforts,
-              ensuring a long-lasting impact on policy and practice.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* ---------- Evaluation ---------- */}
       </section>
     </>
   );
