@@ -34,23 +34,19 @@ const DocumentationPage = () => {
         </div>
       </div>
 
-      <section className="max-w-6xl mx-auto px-6 py-10 mb-12 leading-relaxed">
+      <section className="max-w-6xl mx-auto px-6 py-10 md:mt-12 mt-4 mb-12 leading-relaxed">
         {/* ---------- Image Section ---------- */}
        
           <div>
             <img
               src="./assets/Image/documents-img.jpg"
               alt="CBO Training"
-              className="rounded-2xl shadow-lg object-cover w-full  h-[630px]"
+              className="rounded-2xl shadow-lg object-cover w-full  md:h-[630px]"
             />
           </div>
 
-          <div className="grid gap-6 mt-12">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
+          <div className="grid gap-2 mt-12">
+          
               <p className="text-gray-700 leading-relaxed text-lg">
                 {" "}
                 Documentation and advocacy form a critical output of the
@@ -67,13 +63,9 @@ const DocumentationPage = () => {
                 print to facilitate knowledge sharing and exchange among various
                 stakeholders.{" "}
               </p>
-            </motion.div>
+          
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
+          
               <p className="text-gray-700 leading-relaxed text-lg">
                 In addition to these learning documents, three advocacy briefs
                 will be developed. These briefs will address key themes: gender
@@ -90,13 +82,9 @@ const DocumentationPage = () => {
                 from local communities, GRAVIS, other CSOs, local authorities,
                 research organizations, and the private sector.
               </p>
-            </motion.div>
+         
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
+           
               <p className="text-gray-700 leading-relaxed text-lg">
                 Furthermore, State and national-level advocacy events are
                 planned for the final year of the project, targeting a broader
@@ -106,7 +94,7 @@ const DocumentationPage = () => {
                 document robust data and evidence to support these advocacy
                 efforts, ensuring a long-lasting impact on policy and practice.
               </p>
-            </motion.div>
+
           </div>
 
       </section>

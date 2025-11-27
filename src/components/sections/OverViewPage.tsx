@@ -110,7 +110,7 @@ const OverViewPage = () => {
             {/* Decorative green blur */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-green-300 rounded-full blur-3xl opacity-40"></div>
 
-            <p className="text-gray-700 text-lg leading-relaxed md:px-0 px-6 py-4 mt-3">
+            <p className="text-gray-700 text-lg leading-relaxed md:px-0 px-0 py-4 mt-3">
               GRAVIS systematically documents its learning and experiences
               through robust research and advocacy, including surveys, best
               practices compilation, and evidence-based studies, to maximize

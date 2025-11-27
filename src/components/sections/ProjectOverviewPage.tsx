@@ -35,7 +35,7 @@ const ProjectOverviewPage = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-lg leading-relaxed text-gray-700 mb-6">
+          className="text-lg leading-relaxed text-gray-700 mb-2">
           The SABL (Strengthening Agriculture-Based Livelihoods through Women
           and Youth Empowerment in the Thar Desert, India) project is a 60-month
           initiative undertaken by Gramin Vikas Vigyan Samiti (GRAVIS) and
@@ -68,13 +68,13 @@ const ProjectOverviewPage = () => {
             />
 
   
-  <div className="space-y-8 mt-10">
-        <motion.div
+  <div className="space-y-2 mt-10">
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
-          <p className="text-gray-700 leading-relaxed">
+          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300"> */}
+          <p className="text-gray-700 leading-relaxed text-lg">
             Key activities include strengthening Community Based Organizations
             (CBOs), such as Self Help Groups (SHGs) and Intergenerational
             Learning groups (ILGs), and providing them with training in improved
@@ -86,14 +86,14 @@ const ProjectOverviewPage = () => {
             developed to enhance food and fodder security for approximately
             20,000 people and 80,000 cattle.
           </p>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
-          <p className="text-gray-700 leading-relaxed">
+          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300"> */}
+          <p className="text-gray-700 leading-relaxed text-lg">
             A crucial component involves equipping 2,400 women and youth with
             financial and digital skills, facilitating their access to capital
             and markets, and providing income generating support to 100 trained
@@ -103,13 +103,13 @@ const ProjectOverviewPage = () => {
             These efforts aim to inform policy-making and encourage the
             widespread adoption of effective ABL practices.
           </p>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300">
+          className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300"> */}
           <p className="text-gray-700 leading-relaxed">
             GRAVIS will collaborate with local authorities, the private sector,
             and research organizations to ensure sustainability and maximize
@@ -121,7 +121,7 @@ const ProjectOverviewPage = () => {
             economic empowerment in arid zones, fostering resilient and
             equitable communities.
           </p>
-        </motion.div>
+        {/* </motion.div> */}
 </div>
        
       </section>

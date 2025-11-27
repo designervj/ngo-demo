@@ -134,9 +134,9 @@ const ApproachPage = () => {
         {/* ---------- Section 5 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.img
-            src="/assets/Image/approach-img.JPG"
+            src="/assets/Image/approch-img8.jpg"
             alt="Traditional Wisdom"
-            className="rounded-2xl shadow-lg w-full object-cover"
+            className="rounded-2xl shadow-lg w-full h-[440px] object-cover"
           />
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">

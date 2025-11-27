@@ -96,14 +96,14 @@ const PhotoGalleryPage = () => {
 
       {/* ---------- Gallery Section ---------- */}
       <div className="max-w-7xl mx-auto px-4 py-24">
-        <motion.h2
+        {/* <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold text-[#008a2c] text-center mb-10"
         >
           Our Gallery
-        </motion.h2>
+        </motion.h2> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {photos.map((src, i) => (
