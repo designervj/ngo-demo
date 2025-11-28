@@ -43,7 +43,6 @@ const OverViewPage = () => {
       {/* 📜 Main Overview Content */}
       <section className="bg-[#F7F8F6] py-20 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center">
-          {/* Left Image */}
 
           {/* Right Text */}
           <motion.div

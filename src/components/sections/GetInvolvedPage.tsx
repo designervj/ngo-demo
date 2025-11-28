@@ -44,14 +44,14 @@ const GetInvolvedPage = () => {
             {/* LEFT SIDE (Address removed, only Email + Website allowed) */}
             <div className="space-y-6">
               <h3 className="text-xl font-semibold text-gray-900">
-                Contact Us
+                Contact Us 
               </h3>
 
               <div className="flex items-start gap-3">
                 <span className="text-green-600 text-lg pt-1">  <Mail className="w-5 h-5 text-black" /></span>
                 <div>
                   <p className="text-gray-900 font-medium">Email</p>
-                  <p className="text-gray-600">info@sablproject.org</p>
+                  <p className="text-gray-600"><a href="mailto:info@sabl.org">info@sabl.org</a></p>
                 </div>
               </div>
 
@@ -61,7 +61,9 @@ const GetInvolvedPage = () => {
               
 
                   <p className="text-gray-900 font-medium">Website</p>
-                  <p className="text-gray-600">www.sablproject.org</p>
+                  <a href="https://www.sabl.org.in" target="_blank" rel="noopener noreferrer">
+                    www.sabl.org.in
+                  </a>
                 </div>
               </div>
             </div>

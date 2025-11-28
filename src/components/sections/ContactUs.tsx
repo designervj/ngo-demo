@@ -11,7 +11,7 @@ export default function ContactSection() {
       <div className="absolute inset-0 bg-[#fff]/80"></div>
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-[#123751] mb-6">
-          Contact Us
+          Contact Us 
         </h2>
         <p className="text-gray-700 mb-12">
           We’d love to hear from you. Whether you're interested in our work, need support, or just want to connect — reach out below.

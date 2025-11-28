@@ -8,23 +8,24 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // ⭐ Client ke diye hue videos + captions
 const videos = [
+
   {
     id: 1,
     url: "/assets/Image/HarvestingVideo1.mp4",
-    title: "Harvesting",
+    title: "Field Updates",
     content: "Songs Of Harvest",
   },
   {
     id: 2,
     url: "/assets/Image/Threshingvideo.mp4",
-    title: "Threshing",
+    title: "Field Updates",
     content:
       "A group of farmers collaborating with robust threshing machines to transform their raw produce into valuable yield",
   },
   {
     id: 3,
     url: "/assets/Image/AnimalHusbandryVideo.mp4",
-    title: "Animal Husbandry ",
+    title: "Field Updates ",
     content: "Flock of goats and sheep make their way home",
   },
 ];
@@ -58,7 +59,8 @@ const WhatsNew = () => {
 
         {/* ⭐ PERFECT CENTER TITLE */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#123751] mb-8 text-center">
-          Field Updates
+          
+           What's New
         </h2>
         {/* What's New */}
 

@@ -27,8 +27,7 @@ const AnimalHusbandry = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
-              Strengthening agriculture-based livelihoods through empowerment,
-              innovation, and inclusivity.
+             Establishing  AHUs and silvipasture units to ensure sustainable food, fodder and income for communities and livestock.
             </motion.p>
           </motion.div>
         </div>

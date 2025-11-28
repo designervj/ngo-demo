@@ -28,8 +28,18 @@ const MissionVisionPage = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-            Mission & Vision
+            Mission & Vision 
           </h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
+          >
+           GRAVIS is inspired by Gandhian Principles for Community-led Development.
+          </motion.p>
+          
         </motion.div>
 
         {/* Decorative Bottom Wave */}
@@ -46,9 +56,9 @@ const MissionVisionPage = () => {
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden ">
             <img
-              src="/assets/Image/image (10).png"
+              src="/assets/Image/mission-image.png"
               alt="Mission Image"
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[680px] object-cover"
             />
           </motion.div>
 
@@ -89,7 +99,7 @@ const MissionVisionPage = () => {
            <img
               src="/assets/Image/img (6).jpg"
               alt="Vision Image"
-              className="w-full h-[550px] object-cover rounded-2xl"
+              className="w-full h-[700px] object-cover rounded-2xl"
             />
  </div>
       </section>

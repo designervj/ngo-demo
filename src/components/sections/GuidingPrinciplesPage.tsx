@@ -75,7 +75,7 @@ const GuidingPrinciplesPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
           >
-            GRAVIS’s approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment.
+            GRAVIS' approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment.
           </motion.p>
         </motion.div>
                   
