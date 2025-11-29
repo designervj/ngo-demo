@@ -66,7 +66,7 @@ const OverViewPage = () => {
 
             <div>
               <img
-                src="assets/Image/image1.png"
+                src="assets/Image/overview-imgae2.png"
                 alt="GRAVIS team"
                 className="object-cover w-full rounded-2xl"
               />
@@ -100,7 +100,7 @@ const OverViewPage = () => {
             className="relative">
             <div className=" overflow-hidden gap-2 flex flex-wrap">
               <img
-                src="assets/Image/image2.png"
+                src="assets/Image/overview-imgae1.png"
                 alt="GRAVIS team"
                 className="object-cover w-full  rounded-2xl"
               />

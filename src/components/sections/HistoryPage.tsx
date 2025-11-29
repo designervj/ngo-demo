@@ -68,7 +68,7 @@ const HistoryPage = () => {
 
           <div>
             <img
-              src="assets/Image/history-img.png"
+              src="assets/Image/history-imgae.png"
               alt="OverView Image"
               className=" rounded-md w-full"></img>
           </div>
@@ -104,7 +104,7 @@ const HistoryPage = () => {
 
           <div className="flex flex-wrap gap-2 justify-center mt-0 mx-auto ">
             <img
-              src="assets/Image/history-img1.png"
+              src="assets/Image/history-imgae2.png"
               alt="Overview Image"
               className="rounded-md w-full"></img>
           </div>

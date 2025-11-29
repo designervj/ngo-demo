@@ -16,42 +16,42 @@ const sections = [
     icon: <FaTint className="text-green-600 text-4xl" />,
     content:
       "In drought-prone areas, water scarcity jeopardizes health, agriculture, and girls' education. GRAVIS implements integrated watershed programs, constructing traditional rainwater harvesting structures like taankas, naadis, and beris to provide sustainable water access.",
-    image: "/assets/Image/sabl-img1.jpg",
+    image: "/assets/Image/sabl-img1.png",
   },
   {
     title: "Agriculture and Animal Husbandry",
     icon: <FaSeedling className="text-green-600 text-4xl" />,
     content:
       "Desert communities face declining water tables, droughts, and unsustainable farming practices, threatening food security. GRAVIS collaborates with villagers on carefully planned agriculture and livestock management programs to enhance food security.",
-    image: "/assets/Image/sabl-img2.jpg",
+    image: "/assets/Image/sabl-img3.png",
   },
   {
     title: "Health",
     icon: <FaStethoscope className="text-green-600 text-4xl" />,
     content:
       "Harsh conditions lead to health issues like malnutrition, poor sanitation, and limited medical access. GRAVIS improves well-being through affordable medical facilities, Village Health Worker training, and medical camps. We offer specific programs for women and girls, including pre-natal, post-natal, nutrition, and family planning. We also support the elderly through nutrition, economic security, and Village Older People's Associations (VOPAs), addressing their physical and mental health needs.",
-    image: "/assets/Image/sabl-img3.jpg",
+    image: "/assets/Image/sabl-img5.png",
   },
   {
     title: "Education",
     icon: <FaBookOpen className="text-green-600 text-4xl" />,
     content:
       "Basic education is a luxury in rural areas, especially for girls, due to daily chores, lack of nutrition, and distant schools. GRAVIS provides schools, teachers, materials, uniforms, and transport. Our water harvesting initiatives also free up girls' and women's time for education.",
-    image: "/assets/Image/sabl-img4.jpg",
+    image: "/assets/Image/sabl-img4.png",
   },
   {
     title: "Community Mobilization",
     icon: <FaUsers className="text-green-600 text-4xl" />,
     content:
       "We foster village self-reliance by forming CBOs in the Thar region. These groups actively participate in all project phases—planning, training, implementation, monitoring, and maintenance—serving as platforms for community expression.",
-    image: "/assets/Image/sabl-img5.jpg",
+    image: "/assets/Image/sabl-img2.png",
   },
   {
     title: "Research & Advocacy",
     icon: <FaBullhorn className="text-green-600 text-4xl" />,
     content:
       "GRAVIS prioritizes research to identify effective measures and disseminate best practices. Through publications, we share valuable insights, extending our impact. We also support the poor by amplifying their voice in critical policy decisions.",
-    image: "/assets/Image/sabl-img6.jpg",
+    image: "/assets/Image/sabl-img6.png",
   },
 ];
 
