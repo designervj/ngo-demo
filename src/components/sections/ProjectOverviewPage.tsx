@@ -64,7 +64,7 @@ const ProjectOverviewPage = () => {
          <motion.img
               src="./assets/Image/project-overview.jpg"
               alt="Community Empowerment"
-              className="rounded-2xl shadow-lg w-full object-cover h-[680px]"
+              className="rounded-2xl shadow-lg w-full object-cover md:h-[680px]"
             />
 
   

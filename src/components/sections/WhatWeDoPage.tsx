@@ -126,7 +126,7 @@ export default function WhatWeDoPage() {
               <img
                 src={sec.image}
                 alt={sec.title}
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full md:h-80 sm:h-80 h-60 object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

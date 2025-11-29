@@ -58,7 +58,7 @@ const MissionVisionPage = () => {
             <img
               src="/assets/Image/mission-image.png"
               alt="Mission Image"
-              className="w-full h-[680px] object-cover"
+              className="w-full md:h-[680px] object-cover"
             />
           </motion.div>
 
@@ -99,7 +99,7 @@ const MissionVisionPage = () => {
            <img
               src="/assets/Image/img (6).jpg"
               alt="Vision Image"
-              className="w-full h-[700px] object-cover rounded-2xl"
+              className="w-full md:h-[700px] object-cover rounded-2xl"
             />
  </div>
       </section>
