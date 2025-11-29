@@ -51,7 +51,7 @@ const GetInvolvedPage = () => {
                 <span className="text-green-600 text-lg pt-1">  <Mail className="w-5 h-5 text-black" /></span>
                 <div>
                   <p className="text-gray-900 font-medium">Email</p>
-                  <p className="text-gray-600"><a href="mailto:info@sabl.org">info@sabl.org</a></p>
+                  <p className="text-gray-600"><a href="mailto:info@sabl.org.in">info@sabl.org.in</a></p>
                 </div>
               </div>
 
