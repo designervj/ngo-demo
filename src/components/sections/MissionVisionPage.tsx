@@ -94,14 +94,14 @@ const MissionVisionPage = () => {
 
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center mt-10">
+        {/* <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center mt-10">
 
            <img
               src="/assets/Image/img (6).jpg"
               alt="Vision Image"
               className="w-full md:h-[700px] object-cover rounded-2xl"
             />
- </div>
+ </div> */}
       </section>
 
    
