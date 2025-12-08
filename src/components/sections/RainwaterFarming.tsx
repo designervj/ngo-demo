@@ -29,7 +29,7 @@ const RainwaterFarming = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90"
           >
-          Boosting agricultural productivity and food security in the arid Thar Desert by focusing on advanced rainwater harvesting and water-smart farming techniques.
+          Boosting agricultural productivity and food security in the arid Thar Desert by focusing on advanced rainwater harvesting and water-smart farming techniques
           </motion.p>
         </motion.div>
       </div>

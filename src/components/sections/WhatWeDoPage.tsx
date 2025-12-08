@@ -15,21 +15,21 @@ const sections = [
     title: "Water Security",
     icon: <FaTint className="text-green-600 text-4xl" />,
     content:
-      "In drought-prone areas, water scarcity jeopardizes health, agriculture, and girls' education. GRAVIS implements integrated watershed programs, constructing traditional rainwater harvesting structures like taankas, naadis, and beris to provide sustainable water access.",
+      "In drought-prone areas, water scarcity jeopardizes health, agriculture, and girls' education. GRAVIS implements integrated watershed programmes, constructing traditional rainwater harvesting structures like taankas, naadis, and beris to provide sustainable water access.",
     image: "/assets/Image/sabl-img1.png",
   },
   {
-    title: "Agriculture and Animal Husbandry",
+    title: "Agriculture & Animal Husbandry",
     icon: <FaSeedling className="text-green-600 text-4xl" />,
     content:
-      "Desert communities face declining water tables, droughts, and unsustainable farming practices, threatening food security. GRAVIS collaborates with villagers on carefully planned agriculture and livestock management programs to enhance food security.",
+      "Desert communities face declining water tables, droughts, and unsustainable farming practices, threatening food security. GRAVIS collaborates with villagers on carefully planned agriculture and livestock management programmes to enhance food security.",
     image: "/assets/Image/sabl-img3.png",
   },
   {
     title: "Health",
     icon: <FaStethoscope className="text-green-600 text-4xl" />,
     content:
-      "Harsh conditions lead to health issues like malnutrition, poor sanitation, and limited medical access. GRAVIS improves well-being through affordable medical facilities, Village Health Worker training, and medical camps. We offer specific programs for women and girls, including pre-natal, post-natal, nutrition, and family planning. We also support the elderly through nutrition, economic security, and Village Older People's Associations (VOPAs), addressing their physical and mental health needs.",
+      "Harsh conditions lead to health issues like malnutrition, poor sanitation, and limited medical access. GRAVIS improves well-being through affordable medical facilities, Village Health Worker training, and medical camps. We offer specific programmes for women and girls, including pre-natal, post-natal, nutrition, and family planning. We also support the elderly through nutrition, economic security, and Village Older People's Associations (VOPAs), addressing their physical and mental health needs.",
     image: "/assets/Image/sabl-img5.png",
   },
   {
@@ -90,7 +90,7 @@ export default function WhatWeDoPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-5 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
             GRAVIS empowers communities through participation, planning, and
-            partnerships — building a resilient and self-reliant future.
+            partnerships — building a resilient and self-reliant future
           </motion.p>
         </motion.div>
 

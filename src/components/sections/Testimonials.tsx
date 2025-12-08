@@ -13,12 +13,12 @@ const videos = [
     id: 1,
     url: "/assets/Image/HarvestingVideo1.mp4",
     title: "Field Updates",
-    content: "Songs Of Harvest",
+    content: "Songs of harvest",
   },
   {
     id: 2,
-    url: "/assets/Image/Threshingvideo.mp4",
-    title: "Field Updates",
+    url: "/assets/Image/Threshing-video.mp4",
+    title: "Field Updates ",
     content:
       "A group of farmers collaborating with robust threshing machines to transform their raw produce into valuable yield",
   },

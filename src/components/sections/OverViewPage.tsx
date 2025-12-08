@@ -33,7 +33,7 @@ const OverViewPage = () => {
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">
             GRAVIS empowers rural India through innovation, inclusion, and
             Gandhian values — transforming communities with compassion and
-            collaboration.
+            collaboration
           </p>
         </motion.div>
 
@@ -51,17 +51,16 @@ const OverViewPage = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-6">
-              Building a Resilient and Self-Reliant Future
+              Building a resilient and self-reliant future
             </h2>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-8">
               Founded in 1983,{" "}
               <strong>Gramin Vikas Vigyan Samiti (GRAVIS) </strong> is a
               distinguished Non-Governmental Organization dedicated to rural
-              development across Rajasthan, Uttarakhand, and Uttar Pradesh,
-              India. GRAVIS pioneers innovative, need-based development models
+              development in the Indian states of Rajasthan, Uttarakhand, and Uttar Pradesh. GRAVIS pioneers innovative, need-based development models
               through strategic partnerships with governmental bodies,
-              non-profits, corporations, and Community-based Organizations.
+              non-profits, corporations, and Community-based Organizations (CBOs).
             </p>
 
             <div>
@@ -74,7 +73,7 @@ const OverViewPage = () => {
 
             <p className="text-gray-700 text-lg leading-relaxed mt-10">
               Its efforts have positively impacted approximately{" "}
-              <strong>2 million individuals</strong> facing severe poverty and
+              <strong>2.7 million individuals</strong> facing severe poverty and
               health challenges. By integrating traditional knowledge with
               modern science and adhering to integrated development principles,
               GRAVIS addresses critical Sustainable Development Goals through

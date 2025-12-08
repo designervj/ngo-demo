@@ -51,28 +51,28 @@ const ObjectivesPage = () => {
           {[
             {
               title:
-                "1. Enhance Participation of Women and Youth in Agriculture-Based Livelihoods",
+                "1. Enhance participation of women and youth in agriculture-based livelihoods",
               desc: "The project focuses on boosting agricultural output and ensuring efficient use of natural resources. This includes implementing improved rainwater harvesting structures like khadins, promoting sustainable farming practices, and encouraging crop diversification to enhance food and fodder security in the region.",
             },
             {
               title:
-                "2. Improve Agricultural Productivity and Resource Management",
+                "2. Improve agricultural productivity and resource management",
               desc: "The project focuses on boosting agricultural output and ensuring efficient use of natural resources. This includes implementing improved rainwater harvesting structures like khadins, promoting sustainable farming practices, and encouraging crop diversification to enhance food and fodder security in the region.",
             },
             {
-              title: "3. Strengthen Community Resilience and Adaptive Capacity",
+              title: "3. Strengthen community resilience and adaptive capacity",
               desc: "By developing Arid Horticultural Units (AHUs) and silvipasture units, we aim to build the resilience of communities against climate variability and resource scarcity. These initiatives provide alternative livelihood options and secure access to essential resources for both people and livestock.",
             },
             {
-              title: "4. Foster Entrepreneurship and Market Linkages",
+              title: "4. Foster entrepreneurship and market linkages",
               desc: "We are committed to nurturing entrepreneurial ventures among women and youth. By facilitating access to finance, connecting them with markets, and supporting the establishment of food processing and other value-added units, we aim to create sustainable income-generating opportunities.",
             },
             {
-              title: "5. Facilitate Learning, Knowledge Sharing, and Advocacy",
+              title: "5. Facilitate learning, knowledge sharing, and advocacy",
               desc: " A vital objective is to document the lessons learned and best practices throughout the project's implementation. Through comprehensive learning documents and advocacy briefs, we aim to influence policy decisions, promote the replication of successful ABL models, and contribute to broader development dialogues.",
             },
             {
-              title: "6. Promote Gender Equality and Youth Empowerment",
+              title: "6. Promote gender equality and youth empowerment",
               desc: " Underpinning all project activities is a strong commitment to gender equality and youth empowerment. We work to dismantle barriers, provide equal opportunities, and ensure that women and young people are active participants and beneficiaries in the region's agricultural transformation.",
             },
           ].map((obj, i) => (
@@ -95,8 +95,9 @@ const ObjectivesPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-12 text-lg leading-relaxed text-gray-700">
-          Through these interconnected objectives, the <strong>SABL</strong>
-          project strives to create a replicable model for sustainable economic
+          Through these interconnected objectives, the <strong>SABL </strong> 
+
+           project strives to create a replicable model for sustainable economic
           empowerment, building adaptive and just communities in the Thar Desert
           and beyond.
         </motion.p>
