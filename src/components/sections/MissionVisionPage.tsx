@@ -37,7 +37,7 @@ const MissionVisionPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
           >
-           GRAVIS is inspired by Gandhian Principles for community-led development
+           GRAVIS is inspired by Gandhian principles for community-led development
           </motion.p>
           
         </motion.div>

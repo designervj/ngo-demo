@@ -26,7 +26,7 @@ const principles = [
   },
   {
     icon: <FaLightbulb className="text-green-700 text-4xl mb-4" />,
-    title: "Blending science & traditional knowledge",
+    title: "Blending science and traditional knowledge",
     desc: "GRAVIS integrates local wisdom with modern scientific techniques, creating effective interventions and garnering community support.",
   },
   {
