@@ -117,7 +117,7 @@ const Header = () => {
 
               <div className="md:hidden block">
              <Link to="./"> <img
-                src="/assets/Image/gravis-logo.svg"
+                src="/assets/Image/GRAVIS-logo.png"
                 alt="logo"
                 className="h-16 w-auto"
               />
@@ -221,9 +221,9 @@ const Header = () => {
 
           <div className="md:block hidden">
              <Link to="./"> <img
-                src="/assets/Image/gravis-logo.svg"
+                src="/assets/Image/GRAVIS-logo.png"
                 alt="logo"
-                className="h-16 w-auto"
+                className="h-12 w-auto"
               />
               </Link>
             </div>

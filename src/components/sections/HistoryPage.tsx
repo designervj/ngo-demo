@@ -38,7 +38,7 @@ const HistoryPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
             Tracing GRAVIS’ journey — from a small movement in the Thar Desert
-            to a model of rural transformation across India.
+            to a model of rural transformation across India
           </motion.p>
         </motion.div>
 
@@ -49,7 +49,7 @@ const HistoryPage = () => {
       <section className="bg-[#F7F8F6] py-16 px-6 md:px-20 text-gray-800 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-semibold text-start mb-10 text-[#008a2c]">
-            Our Journey Since 1983
+            Our journey since 1983
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
@@ -63,7 +63,7 @@ const HistoryPage = () => {
             over 70 drought years in the past century and summer temperatures
             soaring to 48 degrees Celsius, severely impedes agricultural
             productivity, contributing to widespread malnutrition and health
-            crises among its remote, yet densely populated, communities.
+            crises among its remote, yet densely populated communities.
           </p>
 
           <div>
@@ -81,16 +81,15 @@ const HistoryPage = () => {
             className="max-w-6xl mx-auto my-9">
             <p className="text-lg leading-relaxed text-gray-700">
               From its humble beginnings in <strong>20 villages</strong>, GRAVIS
-              has expanded its reach to over <strong>2000 communities</strong>,
-              positively impacting over <strong>2 million individuals</strong>{" "}
+              has expanded its reach to over <strong>2000 villages</strong>,
+              positively impacting over <strong>2.7 million individuals</strong>{" "}
               and facilitating the creation of{" "}
-              <strong> 4000 Community-based Organizations</strong>. Recognizing
+              <strong> 4000 CBOs</strong>. Recognizing
               the persistent vulnerabilities faced by women, children, and the
               elderly due to water and food insecurity, GRAVIS adopted a
-              holistic,integrated development strategy. This approach extends to
+              holistic and an integrated development strategy. This approach extends to
               regions in Uttarakhand, addressing challenges posed by floods and
-              dry periods in its mountainous terrain, and to the drought
-              -afflicted Bundelkhand region of Uttar Pradesh, with a strong
+              dry periods in its mountainous terrain, and to the drought-afflicted Bundelkhand region of Uttar Pradesh, with a strong
               focus on farmer empowerment, women's upliftment, and community
               health initiatives. Beyond providing disaster relief and fostering
               global knowledge exchange, GRAVIS is committed to sustainable

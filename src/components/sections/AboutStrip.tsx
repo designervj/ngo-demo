@@ -10,7 +10,7 @@ export default function AboutApproach() {
       icon: <Lightbulb className="w-10 h-10 text-white" />, // Icon color changed to white for contrast
       title: "Our Approach",
       points: [
-        "Capacity Building",
+        "Capacity building",
         "Blending traditional wisdom with new technology",
         "Inclusion",
         "Community participation",
@@ -27,9 +27,9 @@ export default function AboutApproach() {
       points: [
         "Formation and strengthening of CBOs",
         "Rainwater harvesting and dryland farming",
-        "Horticulture and Animal Husbandry",
+        "Horticulture and animal husbandry",
         "Skill development and entrepreneurship",
-        "Documentation and Advocacy",
+        "Documentation and advocacy",
       ],
       // Placeholder image URL - REPLACE WITH YOUR ACTUAL IMAGE URLs
           image: "./assets/Image/slider-img2.png", 

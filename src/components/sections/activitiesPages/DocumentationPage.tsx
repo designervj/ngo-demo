@@ -27,7 +27,7 @@ const DocumentationPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
-              Driving successful replication of ABL practices through comprehensive documentation and advocacy efforts.
+              Driving successful replication of ABL practices through comprehensive documentation and advocacy efforts
             </motion.p>
           </motion.div>
         </div>

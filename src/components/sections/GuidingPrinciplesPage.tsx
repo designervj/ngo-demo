@@ -6,7 +6,7 @@ import { FaUsers, FaHandHoldingHeart, FaSeedling, FaHandsHelping, FaBalanceScale
 const principles = [
   {
     icon: <FaUsers className="text-green-700 text-4xl mb-4" />,
-    title: "Community Participation",
+    title: "Community participation",
     desc: "Beneficiary representatives actively engage in all project phases—from planning to monitoring—often through community-led organizations. This ensures need-based, community-driven initiatives.",
   },
   {
@@ -16,7 +16,7 @@ const principles = [
   },
   {
     icon: <FaSeedling className="text-green-700 text-4xl mb-4" />,
-    title: "Capacity Building",
+    title: "Capacity building",
     desc: "Every project strengthens our team's skills and facilitates knowledge transfer to communities, building local capacity for future endeavors.",
   },
   {
@@ -26,7 +26,7 @@ const principles = [
   },
   {
     icon: <FaLightbulb className="text-green-700 text-4xl mb-4" />,
-    title: "Blending Science & Traditional Knowledge",
+    title: "Blending science & traditional knowledge",
     desc: "GRAVIS integrates local wisdom with modern scientific techniques, creating effective interventions and garnering community support.",
   },
   {
@@ -75,7 +75,7 @@ const GuidingPrinciplesPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
           >
-            GRAVIS' approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment.
+            GRAVIS' approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment
           </motion.p>
         </motion.div>
                   
@@ -93,7 +93,7 @@ const GuidingPrinciplesPage = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-14"
           >
-            Our Core Principles
+            Our core principles
           </motion.h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">

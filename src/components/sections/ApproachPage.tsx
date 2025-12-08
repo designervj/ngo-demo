@@ -37,7 +37,7 @@ const ApproachPage = () => {
           />
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Community-Centric Empowerment
+              Community-centric empowerment
             </h2>
             <p>
               The strategy prioritizes active involvement of local communities,
@@ -55,7 +55,7 @@ const ApproachPage = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Integrated Livelihood Approach
+              Integrated livelihood approach
             </h2>
             <p>
               GRAVIS recognizes that agricultural livelihoods are
@@ -82,7 +82,7 @@ const ApproachPage = () => {
           />
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Capacity Building and Knowledge Transfer
+              Capacity building and knowledge transfer
             </h2>
             <p className="mb-4">
               A significant aspect of the strategy is to enhance knowledge and
@@ -114,7 +114,7 @@ const ApproachPage = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Entrepreneurship and Market Linkages
+              Entrepreneurship and market linkages
             </h2>
             <p>
               The project aims to move beyond subsistence farming by fostering
@@ -140,7 +140,7 @@ const ApproachPage = () => {
           />
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Leveraging Traditional Wisdom and Modern Techniques
+              Leveraging traditional wisdom and modern techniques
             </h2>
             <p>
               The strategy blends traditional knowledge, such as the use of
@@ -155,7 +155,7 @@ const ApproachPage = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Advocacy and Policy Influence
+              Advocacy and policy influence
             </h2>
             <p>
               GRAVIS plans to document learning and develop advocacy briefs to
@@ -181,7 +181,7 @@ const ApproachPage = () => {
           />
           <motion.div>
             <h2 className="text-2xl font-semibold text-[#166534] mb-4">
-              Partnerships and Synergy
+              Partnerships and synergy
             </h2>
             <p>
               The approach involves collaboration with various stakeholders,

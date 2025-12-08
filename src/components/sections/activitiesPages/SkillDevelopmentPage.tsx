@@ -27,7 +27,7 @@ const SkillDevelopmentPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
-             Empowering women and youth with financial and digital skills to foster enterprise development for income generation.
+             Empowering women and youth with financial and digital skills to foster enterprise development for income generation
             </motion.p>
           </motion.div>
         </div>
@@ -98,7 +98,7 @@ const SkillDevelopmentPage = () => {
             </p>
           </div>
           <img
-            src="./assets/Image/Second-Image.jpeg"
+            src="./assets/Image/skill-development-image.jpg"
             alt="Field Visit and Advocacy Event"
             className="rounded-2xl shadow-lg object-cover w-full"
           />

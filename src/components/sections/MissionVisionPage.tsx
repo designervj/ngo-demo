@@ -28,7 +28,7 @@ const MissionVisionPage = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-            Mission & Vision 
+            Mission and  Vision 
           </h1>
 
           <motion.p
@@ -37,7 +37,7 @@ const MissionVisionPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
           >
-           GRAVIS is inspired by Gandhian Principles for Community-led Development.
+           GRAVIS is inspired by Gandhian Principles for community-led development
           </motion.p>
           
         </motion.div>
@@ -82,8 +82,7 @@ const MissionVisionPage = () => {
               self-rule. This philosophy promotes independent, self-sufficient
               villages. Our interventions are therefore planned and executed
               with extensive community involvement, ensuring local ownership,
-              maintenance, and monitoring. Strong community-based organizations
-              (CBOs) are central to GRAVIS' work, actively engaging members in
+              maintenance, and monitoring. Strong CBOs are central to GRAVIS' work, actively engaging members in
               projects to foster self-empowerment rather than merely
               supplementing failing systems.
             </p>
