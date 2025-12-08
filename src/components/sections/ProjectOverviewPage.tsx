@@ -110,7 +110,7 @@ const ProjectOverviewPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-700 hover:shadow-xl transition-all duration-300"> */}
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-lg">
             GRAVIS will collaborate with local authorities, the private sector,
             and research organizations to ensure sustainability and maximize
             impact. The project's approach integrates cross-cutting issues such
