@@ -23,7 +23,23 @@ const MediaCoveragePage = () => {
                           </div>
                         </div>
 
-      <MediaSection />
+      {/* <MediaSection /> */}
+
+
+         {/* Coming Soon Section */}
+                <div className="flex items-center justify-center py-20 bg-gray-100 h-[45vh]">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-center"
+                  >
+                    <h2 className="text-3xl font-bold text-gray-700 mb-4">Coming Soon</h2>
+                    <p className="text-gray-500 text-lg">
+                      We’re working on gathering the relevant information. It will be published here in the near future. Stay tuned!          </p>
+                  </motion.div>
+                </div>
+                
     </div>
   );
 };
