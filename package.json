@@ -13,11 +13,13 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.0.0",
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.552.0",
     "next": "^16.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
+    "react-leaflet": "^4.2.1",
     "react-player": "^3.3.3",
     "react-router-dom": "^7.9.5",
     "swiper": "^12.0.3",
@@ -25,6 +27,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.21",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.3.1",

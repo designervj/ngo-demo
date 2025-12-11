@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import React from "react";
 import { TfiWorld } from "react-icons/tfi";
-
+import SablRajasthanMap from "./SablRajasthanMap";
 
 const GetInvolvedPage = () => {
   return (
     <>
-     <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
         <div className="max-w-xl ">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -15,61 +15,85 @@ const GetInvolvedPage = () => {
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-           Get Involved
+              Get Involved
             </h1>
 
-              <p className="text-white text-lg leading-relaxed pt-4">
-                 We would love to hear from you. To know more about the EU funded SABL project or our other initiatives, write to us.
-              </p>
+            <p className="text-white text-lg leading-relaxed pt-4">
+              We would love to hear from you. To know more about the EU funded
+              SABL project or our other initiatives, write to us.
+            </p>
           </motion.div>
         </div>
       </div>
-   
-    <div
-      className="w-full min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('./assets/Image/image (7).png')", // ⭐ yaha tumhari image ka path
-      }}
-    >
-      {/* Overlay */}
-      <div className="w-full min-h-screen bg-black/40 flex items-center py-16 px-4">
-        <div className="max-w-5xl w-full mx-auto bg-white/80 rounded-xl shadow-xl p-8 md:p-10">
-          
-      
 
+      <div
+        className="w-full min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('./assets/Image/image (7).png')", // ⭐ yaha tumhari image ka path
+        }}>
+        {/* Overlay */}
+        <div className="w-full min-h-screen bg-black/40 flex items-center py-16 px-4">
+          <div className="max-w-5xl w-full mx-auto bg-white/60 rounded-xl shadow-xl p-8 md:p-10">
 
-          {/* LAYOUT: LEFT INFO + RIGHT FORM */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+               
 
-            {/* LEFT SIDE (Address removed, only Email + Website allowed) */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Contact Us 
-              </h3>
+                <div className="flex justify-between  flex-wrap gap-10 my-12 md:pe-12">
+                  {/* Email */}
+                  <div className="flex flex-col justify-center text-center w-full sm:w-[30%] gap-2">
+                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                      <Mail className="w-5 h-5 text-green-600" />
+                    </span>
+                    <h4 className="text-gray-900 font-semibold text-lg mt-1">
+                      Email
+                    </h4>
+                    <p className="text-gray-700 font-medium text-base hover:text-[#000]">
+                      <a href="mailto:info@sabl.org.in">info@sabl.org.in</a>
+                    </p>
+                  </div>
 
-              <div className="flex items-start gap-3">
-                <span className="text-green-600 text-lg pt-1">  <Mail className="w-5 h-5 text-black" /></span>
-                <div>
-                  <p className="text-gray-900 font-medium">Email</p>
-                  <p className="text-gray-600"><a href="mailto:info@sabl.org.in">info@sabl.org.in</a></p>
+                  {/* Website */}
+                  <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
+                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                      <TfiWorld className="w-5 h-5 text-green-600" />
+                    </span>
+                    <p className="text-gray-900 font-semibold text-lg mt-1">
+                      Website
+                    </p>
+                    <a
+                      href="https://www.sabl.org.in"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 font-medium text-base hover:text-[#000]">
+                      www.sabl.org.in
+                    </a>
+                  </div>
+
+                  {/* Address */}
+                  <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
+                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                      <TfiWorld className="w-5 h-5 text-green-600" />
+                    </span>
+                    <p className="text-gray-900 font-semibold text-lg mt-1">
+                      Address
+                    </p>
+                    <p className="text-gray-700 font-medium text-sm leading-5">
+                      3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008,
+                      Rajasthan, India
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="text-green-600 text-lg pt-1"><TfiWorld className="w-5 h-5 text-black" /></span>
-                <div>
               
 
-                  <p className="text-gray-900 font-medium">Website</p>
-                  <a href="https://www.sabl.org.in" target="_blank" rel="noopener noreferrer">
-                    www.sabl.org.in
-                  </a>
-                </div>
-              </div>
-            </div>
+            <SablRajasthanMap />
 
-            {/* RIGHT SIDE — FORM SECTION */}
-            <div className="bg-gray-50 p-6 rounded-md ">
+            {/* LAYOUT: LEFT INFO + RIGHT FORM */}
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10">
+              {/* LEFT SIDE (Address removed, only Email + Website allowed) */}
+             
+
+              {/* RIGHT SIDE — FORM SECTION */}
+              {/* <div className="bg-gray-50 p-6 rounded-md ">
               <form className="space-y-4 ">
 
                 <div>
@@ -107,15 +131,12 @@ const GetInvolvedPage = () => {
                 </button>
 
               </form>
+            </div> */}
             </div>
-
           </div>
-
         </div>
       </div>
-    </div>
-
-     </>
+    </>
   );
 };
 
