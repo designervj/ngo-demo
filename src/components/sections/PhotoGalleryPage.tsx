@@ -1,18 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { X } from "lucide-react";
+
+const ITEMS_PER_PAGE = 12;
 
 const photos = [
   "/assets/Image/GalleryImage/ (1).jpeg",
-   "/assets/Image/GalleryImage/ (1).jpg",
-    "/assets/Image/GalleryImage/ (2).jpg",
+  "/assets/Image/GalleryImage/ (1).jpg",
+  "/assets/Image/GalleryImage/ (2).jpg",
   "/assets/Image/GalleryImage/ (2).jpeg",
   "/assets/Image/GalleryImage/ (3).jpeg",
-   "/assets/Image/GalleryImage/ (3).JPG",
+  "/assets/Image/GalleryImage/ (3).JPG",
   "/assets/Image/GalleryImage/ (4).jpeg",
   "/assets/Image/GalleryImage/ (4).JPG",
-
   "/assets/Image/GalleryImage/ (5).jpeg",
   "/assets/Image/GalleryImage/ (5).JPG",
   "/assets/Image/GalleryImage/ (6).jpeg",
@@ -46,7 +47,7 @@ const photos = [
   "/assets/Image/GalleryImage/ (29).jpg",
   "/assets/Image/GalleryImage/ (30).JPG",
   "/assets/Image/GalleryImage/ (31).jpg",
-  "/assets/Image/GalleryImage/ (32).jpg",
+  "/assets/Image/GalleryImage/ (32).JPG",
   "/assets/Image/GalleryImage/ (33).jpg",
   "/assets/Image/GalleryImage/ (34).jpg",
   "/assets/Image/GalleryImage/ (35).jpg",
@@ -75,147 +76,129 @@ const photos = [
   "/assets/Image/GalleryImage/ (58).jpg",
   "/assets/Image/GalleryImage/ (59).jpg",
   "/assets/Image/GalleryImage/ (60).jpg",
- 
-
-
-
-
-
-
-
-
-
-
-
-
 ];
+
+const Spinner = () => (
+  <div className="flex flex-col items-center justify-center py-20">
+    <div className="h-12 w-12 rounded-full border-4 border-black/20 border-t-black animate-spin mb-4" />
+    <p className="text-sm text-gray-600">Loading images...</p>
+  </div>
+);
+
+const GalleryCard = ({
+  src,
+  onClick,
+}: {
+  src: string;
+  onClick: () => void;
+}) => {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div
+      onClick={onClick}
+      className="relative cursor-pointer overflow-hidden rounded-xl shadow-md bg-white group"
+    >
+      {!loaded && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+      )}
+
+      <img
+        src={src}
+        loading="lazy"
+        decoding="async"
+        onLoad={() => setLoaded(true)}
+        className={`w-full h-64 object-cover transition-transform duration-500 ${
+          loaded ? "opacity-100" : "opacity-0"
+        } group-hover:scale-110`}
+      />
+
+      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+        <span className="text-white text-lg">View</span>
+      </div>
+    </div>
+  );
+};
 
 const PhotoGalleryPage = () => {
   const [selected, setSelected] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
+  const [pageLoading, setPageLoading] = useState(true);
+
+  const totalPages = Math.ceil(photos.length / ITEMS_PER_PAGE);
+
+  const paginatedPhotos = useMemo(() => {
+    const start = (page - 1) * ITEMS_PER_PAGE;
+    return photos.slice(start, start + ITEMS_PER_PAGE);
+  }, [page]);
+
+  // Fake loader on page change (UX)
+  useEffect(() => {
+    setPageLoading(true);
+    const t = setTimeout(() => setPageLoading(false), 600);
+    return () => clearTimeout(t);
+  }, [page]);
 
   return (
-    <div className="bg-[#F7F8F6]">
-    
-      {/* <div className="relative w-full h-[65vh] flex items-center justify-center text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-700 via-green-600 to-green-800">
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage:
-                "url('data:image/svg+xml,%3Csvg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" stroke=\"%23fff\" stroke-width=\"0.5\"%3E%3Cpath d=\"M0 40 Q40 0 80 40 T160 40\"/%3E%3Cpath d=\"M0 60 Q40 20 80 60 T160 60\"/%3E%3C/g%3E%3C/svg%3E')",
-              backgroundSize: "cover",
-            }}
-          ></div>
-        </div>
+    <div className="bg-[#F7F8F6] min-h-screen">
+      {/* Header */}
+      <div className="h-[40vh] flex items-center justify-center bg-[#123751] text-white">
+        <h1 className="text-5xl font-extrabold">Photo Gallery</h1>
+      </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="relative z-10 text-white px-6"
-        >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight drop-shadow-lg">
-            Photo Gallery
-          </h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
-          >
-            Explore moments that capture GRAVIS’s mission — empowering rural
-            communities through sustainability and inclusion.
-          </motion.p>
-        </motion.div>
-
-    
-        <div className="absolute bottom-0 w-full overflow-hidden leading-[0] rotate-180">
-          <svg
-            className="relative block w-[calc(150%+1.3px)] h-[100px]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44C183.09,83.15,65.54,111.23,0,120V0H1200V27.35C1131.36,48.69,959.75,83.94,721.39,66.16,548.75,53.63,404.41,42.92,321.39,56.44Z"
-              fill="#F7F8F6"
-            ></path>
-          </svg>
-        </div>
-      </div> */}
-
-         <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
-              <div>
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 }}
-                  className="relative z-10 text-center text-white px-6">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-                   Photo Gallery
-                  </h1>
-                </motion.div>
-              </div>
-            </div>
-
-      {/* ---------- Gallery Section ---------- */}
-      <div className="max-w-7xl mx-auto px-4 py-24">
-        {/* <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-[#008a2c] text-center mb-10"
-        >
-          Our Gallery
-        </motion.h2> */}
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {photos.map((src, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="relative cursor-pointer group overflow-hidden rounded-xl shadow-md"
-              onClick={() => setSelected(src)}
-            >
-              <img
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        {pageLoading ? (
+          <Spinner />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {paginatedPhotos.map((src, i) => (
+              <GalleryCard
+                key={`${src}-${i}`}
                 src={src}
-                alt={`Gallery ${i + 1}`}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                onClick={() => setSelected(src)}
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-medium tracking-wide text-lg">
-                  View
-                </span>
-              </div>
-            </motion.div>
-          ))}
+            ))}
+          </div>
+        )}
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center gap-4 mt-14">
+          <button
+            disabled={page === 1}
+            onClick={() => setPage((p) => p - 1)}
+            className="px-5 py-2 rounded-lg border bg-white disabled:opacity-40"
+          >
+            Prev
+          </button>
+
+          <span className="text-sm text-gray-600">
+            Page {page} of {totalPages}
+          </span>
+
+          <button
+            disabled={page === totalPages}
+            onClick={() => setPage((p) => p + 1)}
+            className="px-5 py-2 rounded-lg border bg-white disabled:opacity-40"
+          >
+            Next
+          </button>
         </div>
       </div>
 
-      {/* ---------- Overlay Full Image ---------- */}
+      {/* Fullscreen Viewer */}
       {selected && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
           <button
-            className="absolute top-6 right-6 text-white hover:text-gray-300"
+            className="absolute top-6 right-6 text-white"
             onClick={() => setSelected(null)}
           >
             <X size={36} />
           </button>
-          <motion.img
+          <img
             src={selected}
-            alt="Full View"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.4 }}
-            className="max-h-[90vh] w-auto rounded-xl shadow-2xl"
+            className="max-h-[90vh] rounded-xl shadow-2xl"
           />
-        </motion.div>
+        </div>
       )}
     </div>
   );
