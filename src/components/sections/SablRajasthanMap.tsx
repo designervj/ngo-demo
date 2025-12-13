@@ -69,6 +69,7 @@ const SablRajasthanMap: React.FC = () => {
         width: "100%",
         height: "400px", // adjust as needed
         borderRadius: "8px",
+      
       }}
     >
       <MapContainer
