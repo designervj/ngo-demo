@@ -93,7 +93,8 @@ const GuidingPrinciplesPage = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-14"
           >
-            Our core principles
+           Core principles
+           
           </motion.h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">

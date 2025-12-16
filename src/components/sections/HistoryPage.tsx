@@ -49,14 +49,14 @@ const HistoryPage = () => {
       <section className="bg-[#F7F8F6] py-16 px-6 md:px-20 text-gray-800 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-semibold text-start mb-10 text-[#008a2c]">
-            Our journey since 1983
+            Journey since 1983
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            Established in 1983 by <strong>Laxmi Chand Tyagi</strong> and{" "}
+            Established in 1983 by <strong>L. C. Tyagi</strong> and{" "}
             <strong>Shashi Tyagi</strong>, GRAVIS originated from their
             dedication to activism and their backgrounds in agriculture and
-            education. Along with other notable activities, they founded the
+            education. Along with other notable activists, they founded the
             organization in Rajasthan's Thar Desert, a region grappling with
             extreme climate, chronic water scarcity, and a notable absence of
             development agencies. This challenging environment, characterized by

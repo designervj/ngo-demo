@@ -72,7 +72,7 @@ const MissionVisionPage = () => {
               GRAVIS is guided by two foundational Gandhian principles:
               Sarvodaya, meaning "all rising, but the last person first," which
               emphasizes a bottom-up approach for inclusive socio-economic
-              progress. We champion the collective advancement of all
+              progress. The organisation champions the collective advancement of all
               individuals, irrespective of their economic status, age, caste, or
               religion.
             </p>
@@ -80,7 +80,7 @@ const MissionVisionPage = () => {
              <p className="text-lg leading-relaxed text-gray-700 pt-4">
               To achieve this, GRAVIS embraces Gram Swaraj, or village
               self-rule. This philosophy promotes independent, self-sufficient
-              villages. Our interventions are therefore planned and executed
+              villages. Interventions are therefore planned and executed
               with extensive community involvement, ensuring local ownership,
               maintenance, and monitoring. Strong CBOs are central to GRAVIS' work, actively engaging members in
               projects to foster self-empowerment rather than merely

@@ -41,44 +41,47 @@ export const ComingSoon = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4">
-      <div className="max-w-2xl w-full text-center">
+    <div className="min-h-screen  flex items-center justify-center px-4"
+    style={{backgroundImage:"url('./assets/Image/image (7).png')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:"bottom"}}
+    >
+        <div className="bg-white/60 w-full h-[100vh] absolute"></div>
+      <div className="max-w-2xl w-[90%] text-center z-50 absolute">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 ">
             Coming Soon 
           </h1>
 
-          <p className="text-lg text-gray-600 mb-8">
-            We're working hard to bring you something amazing. Stay tuned!
+          <p className="md:text-lg text-sm text-[#008a2c] mb-8 font-semibold ">
+         Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL)
           </p>
 
-          <div className="grid grid-cols-4 gap-4 mb-8">
-            <div className="bg-indigo-50 rounded-lg p-4">
+          <div className="grid grid-cols-4 gap-1 mb-8">
+            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.days}
               </div>
-              <div className="text-sm text-gray-600 mt-1">Days</div>
+              <div className="md:text-sm text-[11px] text-center  text-gray-600 mt-1">Days</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg p-4">
+            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.hours}
               </div>
-              <div className="text-sm text-gray-600 mt-1">Hours</div>
+              <div className="md:text-sm text-[11px] text-gray-600 mt-1">Hours</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg p-4">
+            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.minutes}
               </div>
-              <div className="text-sm text-gray-600 mt-1">Minutes</div>
+              <div className="md:text-sm text-[11px] text-gray-600 mt-1">Minutes</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg p-4">
+            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.seconds}
               </div>
-              <div className="text-sm text-gray-600 mt-1">Seconds</div>
+              <div className="md:text-sm text-[11px]  text-gray-600 mt-1">Seconds</div>
             </div>
           </div>
 
