@@ -48,7 +48,7 @@ const GetInvolvedPage = () => {
                       Email
                     </h4>
                     <p className="text-gray-700 font-medium text-base hover:text-[#000]">
-                      <a href="mailto:info@sabl.org.in">info@sabl.org.in</a>
+                      <a href="mailto:email@gravis.org.in">email@gravis.org.in</a>
                     </p>
                   </div>
 

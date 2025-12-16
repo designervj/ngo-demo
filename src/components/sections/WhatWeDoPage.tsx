@@ -29,28 +29,28 @@ const sections = [
     title: "Health",
     icon: <FaStethoscope className="text-green-600 text-4xl" />,
     content:
-      "Harsh conditions lead to health issues like malnutrition, poor sanitation, and limited medical access. GRAVIS improves well-being through affordable medical facilities, Village Health Worker training, and medical camps. We offer specific programmes for women and girls, including pre-natal, post-natal, nutrition, and family planning. We also support the elderly through nutrition, economic security, and Village Older People's Associations (VOPAs), addressing their physical and mental health needs.",
+      "Harsh conditions lead to health issues like malnutrition, poor sanitation, and limited medical access. GRAVIS improves well-being through affordable medical facilities, Village Health Worker training, and medical camps. GRAVIS offers specific programmes for women and girls, including pre-natal, post-natal, nutrition, and family planning. Elderly are supported through nutrition, economic security and Village Older People’s Association (VOPAs), addressing their physical and mental health needs.",
     image: "/assets/Image/sabl-img5.png",
   },
   {
     title: "Education",
     icon: <FaBookOpen className="text-green-600 text-4xl" />,
     content:
-      "Basic education is a luxury in rural areas, especially for girls, due to daily chores, lack of nutrition, and distant schools. GRAVIS provides schools, teachers, materials, uniforms, and transport. Our water harvesting initiatives also free up girls' and women's time for education.",
+      "Basic education is a luxury in rural areas, especially for girls, due to daily chores, lack of nutrition, and distant schools. GRAVIS provides schools, teachers, materials, uniforms, and transport. Additionally, water harvesting initiatives also free up girls' and women's time for education.",
     image: "/assets/Image/sabl-img4.png",
   },
   {
     title: "Community Mobilization",
     icon: <FaUsers className="text-green-600 text-4xl" />,
     content:
-      "We foster village self-reliance by forming CBOs in the Thar region. These groups actively participate in all project phases—planning, training, implementation, monitoring, and maintenance—serving as platforms for community expression.",
+      "GRAVIS fosters village self-reliance by forming CBOs in the Thar region. These groups actively participate in all project phases—planning, training, implementation, monitoring, and maintenance—serving as platforms for community expression.",
     image: "/assets/Image/sabl-img2.png",
   },
   {
     title: "Research & Advocacy",
     icon: <FaBullhorn className="text-green-600 text-4xl" />,
     content:
-      "GRAVIS prioritizes research to identify effective measures and disseminate best practices. Through publications, we share valuable insights, extending our impact. We also support the poor by amplifying their voice in critical policy decisions.",
+      "GRAVIS prioritizes research to identify effective measures and disseminate best practices. Through publications, GRAVIS shares valuable insights, extending its impact and supports the poor by amplifying their voice in critical policy decisions.",
     image: "/assets/Image/sabl-img6.png",
   },
 ];
@@ -82,7 +82,7 @@ export default function WhatWeDoPage() {
           transition={{ duration: 0.8 }}
           className="relative pb-10 z-10 flex flex-col items-center justify-center text-center text-white px-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
-            What We Do
+           Interventions
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -102,10 +102,9 @@ export default function WhatWeDoPage() {
         <p className="text-gray-700 text-lg leading-relaxed">
           GRAVIS empowers communities by ensuring active participation in
           decision-making and project planning. Recognizing the
-          interconnectedness of rural challenges, we adopt a holistic approach,
+          interconnectedness of rural challenges, GRAVIS adopts a holistic approach,
           tackling multiple issues simultaneously to foster overall improvement.
-          Through partnerships with CBOs, we enhance the living standards of
-          villagers.
+         Through partnerships with CBOs, living standards of villagers are enhanced.
         </p>
       </section>
 

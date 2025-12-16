@@ -12,17 +12,17 @@ const principles = [
   {
     icon: <FaHandHoldingHeart className="text-green-700 text-4xl mb-4" />,
     title: "Inclusion",
-    desc: "We prioritize vulnerable and marginalized groups, ensuring no one is excluded based on gender, age, caste, or religion, and specifically targeting those most in need.",
+    desc: "GRAVIS proritizes vulnerable and marginalized groups, ensuring no one is excluded based on gender, age, caste, or religion, and specifically targeting those most in need.",
   },
   {
     icon: <FaSeedling className="text-green-700 text-4xl mb-4" />,
     title: "Capacity building",
-    desc: "Every project strengthens our team's skills and facilitates knowledge transfer to communities, building local capacity for future endeavors.",
+    desc: "Every project strengthens team's skills and facilitates knowledge transfer to communities, building local capacity for future endeavors.",
   },
   {
     icon: <FaHandsHelping className="text-green-700 text-4xl mb-4" />,
     title: "Self-reliance",
-    desc: "We foster community ownership and sustainability by encouraging contributions and engaging village volunteers, promoting grassroots support.",
+    desc: "GRAVIS fosters community ownership and sustainability by encouraging contributions and engaging village volunteers, promoting grassroots support.",
   },
   {
     icon: <FaLightbulb className="text-green-700 text-4xl mb-4" />,
@@ -32,7 +32,7 @@ const principles = [
   {
     icon: <FaBalanceScale className="text-green-700 text-4xl mb-4" />,
     title: "Co-operation",
-    desc: "Recognizing our limitations, we collaborate with a vast network of partner organizations, government agencies, and experts to secure essential resources and support.",
+    desc: "GRAVIS collaborates with a vast network of partner organizations, government agencies, and experts to secure essential resources and support.",
   },
 ];
 

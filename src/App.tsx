@@ -66,7 +66,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/media" element={<MediaCoveragePage />} />
-        <Route path="/what-we-do" element={<WhatWeDoPage />} />
+        <Route path="/interventions" element={<WhatWeDoPage />} />
         <Route path="/overview" element={<OverViewPage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/history" element={<HistoryPage />} />

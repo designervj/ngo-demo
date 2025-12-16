@@ -65,7 +65,7 @@ const Header = () => {
         "History",
         "Mission & Vision",
         "Guiding Principles",
-        "What We Do",
+        "Interventions",
       ],
     },
     {
@@ -93,7 +93,7 @@ const Header = () => {
         "Publications",
         "Case Studies",
         "IEC Materials",
-        "Media",
+        // "Media",
         "Photo Gallery"
       ],
     },
