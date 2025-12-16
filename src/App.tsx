@@ -28,11 +28,11 @@ import DocumentationPage from "./components/sections/activitiesPages/Documentati
 import { ComingSoon, LAUNCH_DATE } from "./components/sections/comingsoon";
 
 export default function App() {
-  const isBeforeLaunch = new Date() < LAUNCH_DATE;
+  // const isBeforeLaunch = new Date() < LAUNCH_DATE;
 
-  if (isBeforeLaunch) {
-    return <ComingSoon />;
-  }
+  // if (isBeforeLaunch) {
+  //   return <ComingSoon />;
+  // }
 
   const [view, setView] = React.useState<"home" | "product">("home");
   const leftNav = [
