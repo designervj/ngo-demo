@@ -36,7 +36,7 @@ const sections = [
     title: "Education",
     icon: <FaBookOpen className="text-green-600 text-4xl" />,
     content:
-      "Basic education is a luxury in rural areas, especially for girls, due to daily chores, lack of nutrition, and distant schools. GRAVIS provides schools, teachers, materials, uniforms, and transport. Additionally, water harvesting initiatives also free up girls' and women's time for education.",
+      "Basic education is a luxury in rural areas, especially for girls, due to daily chores, lack of nutrition, and distant schools. GRAVIS provides schools, teachers, materials, uniforms, and transport. Additionally, water harvesting initiatives also free up girls' and women's time for education and income generation activities respectively.",
     image: "/assets/Image/sabl-img4.png",
   },
   {
@@ -104,8 +104,9 @@ export default function WhatWeDoPage() {
           decision-making and project planning. Recognizing the
           interconnectedness of rural challenges, GRAVIS adopts a holistic approach,
           tackling multiple issues simultaneously to foster overall improvement.
-         Through partnerships with CBOs, living standards of villagers are enhanced.
+
         </p>
+                 {/* Through partnerships with CBOs, living standards of villagers are enhanced. */}
       </section>
 
       {/* 🪴 MAIN CONTENT SECTIONS */}
@@ -138,7 +139,7 @@ export default function WhatWeDoPage() {
                 {sec.title}
               </h2>
             </div>
-            <p className="text-gray-600 leading-relaxed">{sec.content}</p>
+            <p className="text-gray-600 leading-relaxed md:w-[95%]">{sec.content}</p>
           </div>
         </motion.section>
       ))}
