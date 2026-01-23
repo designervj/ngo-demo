@@ -52,7 +52,8 @@ const ObjectivesPage = () => {
             {
               title:
                 "1. Enhance participation of women and youth in agriculture-based livelihoods",
-              desc: "The project focuses on boosting agricultural output and ensuring efficient use of natural resources. This includes implementing improved rainwater harvesting structures like khadins, promoting sustainable farming practices, and encouraging crop diversification to enhance food and fodder security in the region.",
+              desc: "The core objective is to significantly increase the involvement and leadership of women and youth in all aspects of ABL. This will be achieved through targeted capacity building, providing them with essential skills, knowledge, and resources to thrive in agricultural and allied sectors.",
+
             },
             {
               title:
